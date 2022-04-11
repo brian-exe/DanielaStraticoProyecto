@@ -1,0 +1,15 @@
+@import './nav/nav';
+@import './hero/hero';
+@import './mediaQ/mediasQ';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
