@@ -1,5 +1,5 @@
 .container-exp {
-  margin-top: 45px;
+  margin-top: 30px;
   align-items: center;
   text-align: center;
 }
@@ -11,7 +11,7 @@
 
 .title-exp {
   font-weight: 700;
-  line-height: 98px;
+  line-height: 78px;
   font-size: 50px;
   letter-spacing: 0em;
   text-align: center;
@@ -28,37 +28,79 @@
 }
 
 .text-primary-color {
-  margin-top: 4.375rem;
   color: #A12568;
+
+}
+.text-title {
   font-weight: 500;
   font-size: 40px;
   line-height: 60px;
+  margin-top: 4.375rem;
 }
 
 .text-nombre {
   font-weight: 500;
   font-size: 40px;
   line-height: 60px;
+  color: #707070;
 }
 
 .text-exp {
   text-align: initial;
 }
+
 .conatiner-text-presentacion {
   margin-top: 20px;
 }
+
 .years-exp {
-  font-size: 50px;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 98px;
+  text-align: right;
+  padding-top: 20px;
 }
 
 .years-text-exp {
-  font-size: 15px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 98px;
+  letter-spacing: 0em;
+  text-align: right;
 }
 
 .text-presentacion {
   font-size: 25px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 32px;
   letter-spacing: 0em;
   color: rgba(115, 115, 115, 1);
+}
+
+.img-exp {
+  max-width: 80%;
+  margin-left: 6.25rem;
+}
+
+.description-years {
+  color: rgba(80, 80, 80, 1);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.cont-text-img-exp {
+  padding: 0;
+}
+
+.container-years {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container-bt-sm {
+  margin-top: 25px;
 }
