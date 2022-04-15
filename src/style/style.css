@@ -61,6 +61,77 @@
   width: 90%;
   margin-top: 48px;
 }
+/* EXPERIENCE */
+.container-exp {
+  margin-top: 100px;
+}
+
+.container-exp img{
+  max-height: 80%;
+  max-width: 100%;
+}
+
+.title-exp {
+  font-weight: 700 bold;
+  color: #565454;
+  line-height: 98px;
+  letter-spacing: 0em;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.container-title-exp {
+  margin-top: 50px;
+  text-align: center;
+}
+
+/* .text-exp {
+  font-size: 1.75rem;
+  font-weight: 500;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(115, 115, 115, 1);
+  width: 90%;
+  margin-top: 48px;
+} */
+
+.text-exp {
+  text-align: initial;
+}
+.years-exp {
+  font-size: 50px;
+}
+
+.container-years-exp {
+  align-items: center;
+  text-align: center;
+}
+
+.years-text-exp {
+  font-size: 15px;
+}
+/* FIN EXPERIENCE */
+
+/* SERVICES */
+.container-services {
+  display: flex;
+  margin-top: 100px;
+}
+
+.service-card{ 
+  width: 18rem !important;
+  border-radius: 1.25rem !important;
+}
+.services-cards-container{
+  display: flex;
+  justify-content: space-around;
+}
+
+
+/* FIN SERVICES */
+.text-primary-color{
+ color: #A12568;
+}
 
 .btn-pink {
   padding: 1rem 1.25rem;
