@@ -31,11 +31,11 @@ function Experience() {
                     <Row> <img src={expImg} alt="" /></Row>
                     <Row>
                         <Col>
-                            <Row className="text-primary-color"> <h1 className="years-exp">+5 <span className="years-text-exp">años</span></h1> </Row>
+                            <Row className="text-primary-color container-years-exp "> <h1 className="years-exp">+5 <span className="years-text-exp">años</span></h1> </Row>
                             <Row> <Col> <p>Facilitando procesos individuales y colectivos para generar armonía vincular</p> </Col> </Row>
                         </Col>
                         <Col>
-                            <Row className="text-primary-color"> <h1 className="years-exp">+10 <span className="years-text-exp">años</span></h1></Row>
+                            <Row className="text-primary-color container-years-exp "> <h1 className="years-exp">+10 <span className="years-text-exp">años</span></h1></Row>
                             <Row> <Col> <p>Desarrollándome en la industria legal en materia de derecho privado</p> </Col> </Row>
                         </Col>
                     </Row>
