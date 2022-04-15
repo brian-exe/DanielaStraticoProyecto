@@ -27,19 +27,23 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 100px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 .container-hero img {
-  max-height: 90%;
   max-width: 100%;
 }
 
+.container-img {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
 .lg-title-hero {
-  font-size: 5rem;
+  font-size: 4.5rem;
   font-weight: 700;
   line-height: 98px;
   letter-spacing: 0em;
@@ -49,7 +53,7 @@
 
 .container-text-hero {
   margin-top: 50px;
-  width: 80%;
+  width: 60%;
 }
 
 .text-hero {
@@ -59,86 +63,89 @@
   text-align: left;
   color: #737373;
   width: 90%;
-  margin-top: 48px;
-}
-/* EXPERIENCE */
-.container-exp {
-  margin-top: 100px;
 }
 
-.container-exp img{
+.btn-pink {
+  padding: 1rem 1.75rem;
+  height: 48px;
+  border-radius: 100px;
+  background: #BC448C;
+  color: white;
+}
+
+.container-btn {
+  margin-top: 68px;
+}
+
+.container-exp {
+  margin-top: 45px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.container-exp img {
   max-height: 80%;
   max-width: 100%;
 }
 
 .title-exp {
-  font-weight: 700 bold;
-  color: #565454;
+  font-weight: 700;
   line-height: 98px;
+  font-size: 50px;
   letter-spacing: 0em;
   text-align: center;
-  text-decoration: underline;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .container-title-exp {
+  border-bottom: 1px solid black;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
   text-align: center;
 }
 
-/* .text-exp {
-  font-size: 1.75rem;
+.text-primary-color {
+  margin-top: 4.375rem;
+  color: #A12568;
   font-weight: 500;
-  letter-spacing: 0em;
-  text-align: left;
-  color: rgba(115, 115, 115, 1);
-  width: 90%;
-  margin-top: 48px;
-} */
+  font-size: 40px;
+  line-height: 60px;
+}
+
+.text-nombre {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 60px;
+}
 
 .text-exp {
   text-align: initial;
 }
-.years-exp {
-  font-size: 50px;
+
+.conatiner-text-presentacion {
+  margin-top: 20px;
 }
 
-.container-years-exp {
-  align-items: center;
-  text-align: center;
+.years-exp {
+  font-size: 50px;
 }
 
 .years-text-exp {
   font-size: 15px;
 }
-/* FIN EXPERIENCE */
 
-/* SERVICES */
-.container-services {
-  display: flex;
-  margin-top: 100px;
-}
-
-.service-card{ 
-  width: 18rem !important;
-  border-radius: 1.25rem !important;
-}
-.services-cards-container{
-  display: flex;
-  justify-content: space-around;
-}
-
-
-/* FIN SERVICES */
-.text-primary-color{
- color: #A12568;
-}
-
-.btn-pink {
-  padding: 1rem 1.25rem;
-  height: 48px;
-  border-radius: 100px;
-  background: #BC448C;
-  color: white;
+.text-presentacion {
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+  color: #737373;
 }
 
 @media only screen and (max-width: 1522px) {
@@ -156,5 +163,9 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
