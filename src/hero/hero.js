@@ -8,11 +8,11 @@ export const Hero = () => {
             <div className='container-text-hero'>
                 <h2 className='lg-title-hero'>Consultoría Legal y Comunicación</h2>
                 <p className='text-hero'>Facilitar las relaciones y contingencias legales de manera versátil, según las necesidades específicas del contexto.</p>
+                <a className='btn-pink' href="#">Informate +</a>
             </div>
             <div>
                 <img src={heroImg} alt="" />
             </div>
         </Container>
-            
     )
 }

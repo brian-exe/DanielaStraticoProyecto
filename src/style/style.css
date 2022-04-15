@@ -62,6 +62,14 @@
   margin-top: 48px;
 }
 
+.btn-pink {
+  padding: 1rem 1.25rem;
+  height: 48px;
+  border-radius: 100px;
+  background: #BC448C;
+  color: white;
+}
+
 @media only screen and (max-width: 1522px) {
   .lg-title-hero {
     font-size: 4rem;
