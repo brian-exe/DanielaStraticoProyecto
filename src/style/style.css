@@ -70,6 +70,16 @@
   height: 48px;
   border-radius: 100px;
   background: #BC448C;
+  border-color: #BC448C;
+  color: white;
+}
+
+.btn-pink:hover {
+  padding: 1rem 1.75rem;
+  height: 48px;
+  border-radius: 100px;
+  background: #BC448C;
+  border-color: #BC448C;
   color: white;
 }
 
@@ -196,6 +206,54 @@
 
 .container-bt-sm {
   margin-top: 25px;
+}
+
+.container-services {
+  margin-top: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.services-cards-container {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.service-card {
+  width: 18rem;
+  border-radius: 1.25rem;
+}
+
+.service-card-button {
+  border-color: #A12568;
+  background-color: #A12568;
+}
+
+.container-contact {
+  margin-top: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.content-contact {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.text-contact {
+  text-align: initial;
 }
 
 @media only screen and (max-width: 1522px) {
