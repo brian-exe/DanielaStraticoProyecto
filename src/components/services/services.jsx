@@ -1,4 +1,4 @@
-import { Container, Row, Col, Button, Card } from "react-bootstrap";
+import { Container, Row} from "react-bootstrap";
 import ServiceCard from "./service-card";
 import React from 'react';
 import legalesImg from '../../assets/legalesImg.png'
@@ -14,17 +14,14 @@ function Services() {
                 </div>
             </Row>
             <Row className="services-cards-container">
-                <ServiceCard
-                    text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum."
+                <ServiceCard 
                     title="Legales"
                     imgSrc={legalesImg} />
                 <ServiceCard 
-                    text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum."
-                    title="Legales"
+                    title="Comunicación"
                     imgSrc={comunicacionImg} />
                 <ServiceCard 
-                    text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum."
-                    title="Legales"
+                    title="Consultoría"
                     imgSrc={coachingImg} />
             </Row>
         </Container>

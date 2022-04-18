@@ -1,0 +1,21 @@
+.container-services {
+    margin-top: 30px;
+    align-items: center;
+    text-align: center;
+  }
+
+.services-cards-container{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .service-card{
+    width: 18rem;
+    border-radius: 1.25rem
+  }
+
+  .service-card-button{
+    border-color: #A12568;
+    background-color: #A12568;
+  }
