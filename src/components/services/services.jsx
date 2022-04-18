@@ -1,20 +1,20 @@
 import { Container, Row, Col, Button, Card } from "react-bootstrap";
 import ServiceCard from "./service-card";
 import React from 'react';
-import legalesImg from '../assets/legalesImg.png'
-import comunicacionImg from '../assets/comunicacionImg.png'
-import coachingImg from '../assets/coachingImg.png'
+import legalesImg from '../../assets/legalesImg.png'
+import comunicacionImg from '../../assets/comunicacionImg.png'
+import coachingImg from '../../assets/coachingImg.png'
 
 function Services() {
     return ( 
-        <Container classname="container-services">
+        <Container className="container-services">
             <Row>
                 <div className='container-title-exp'>
                     <h2 className='title-exp'>Servicios</h2>
                 </div>
             </Row>
             <Row className="services-cards-container">
-                <ServiceCard 
+                <ServiceCard
                     text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum."
                     title="Legales"
                     imgSrc={legalesImg} />

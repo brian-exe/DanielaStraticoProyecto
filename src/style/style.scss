@@ -1,8 +1,3 @@
-@import './nav/nav';
-@import './hero/hero';
-@import './experience/experience';
-@import './mediaQ/mediasQ';
-
 * {
     padding: 0;
     margin: 0;
@@ -19,4 +14,9 @@ a {
         color: white;
     }
 }
+@import './nav/nav';
+@import './hero/hero';
+@import './experience/experience';
+@import './services/services';
+@import './mediaQ/mediasQ';
 

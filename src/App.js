@@ -1,7 +1,7 @@
-import { Hero } from './hero/hero';
-import { NavMenu } from './navbar/nav';
-import Experience from './experience/experience';
-import Services from './services/services';
+import { Hero } from './components/hero/hero';
+import { NavMenu } from './components/navbar/nav';
+import Experience from './components/experience/experience';
+import Services from './components/services/services';
 import React, { Component }  from 'react';
 import './style/style.css';
 

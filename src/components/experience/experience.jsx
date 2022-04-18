@@ -1,6 +1,6 @@
 import { Container, Row, Col, Button } from "react-bootstrap";
 import React from 'react';
-import expImg from '../assets/experienceImg.png'
+import expImg from '../../assets/experienceImg.png'
 
 function Experience() {
     return (

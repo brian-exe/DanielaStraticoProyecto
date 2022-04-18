@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
-import heroImg from '../assets/heroImg.png'
+import heroImg from '../../assets/heroImg.png'
 
 export const Hero = () => {
     return (
