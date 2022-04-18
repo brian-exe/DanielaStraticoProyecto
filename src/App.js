@@ -1,8 +1,9 @@
 import { Hero } from './components/hero/hero';
 import Experience from './components/experience/experience';
 import Services from './components/services/services';
-import Contact from './contact/contact';
-import Footer from './footer/footer';
+import { NavMenu } from './components/navbar/nav';
+import Contact from './components/contact/contact';
+import Footer from './components/footer/footer';
 import { Container } from 'react-bootstrap';
 import React, { Component }  from 'react';
 import fondoRosa from './assets/fondoRosa.png'
