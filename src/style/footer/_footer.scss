@@ -1,0 +1,16 @@
+footer {
+    background-color: rgba(86, 84, 84, 1);
+    display: flex;
+    justify-content: space-between;
+    padding: 43px 120px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.name-footer {
+    font-size: 40px;
+}
+
+.container-menu-footer {
+    display: flex;
+    justify-content: flex-end;
+}

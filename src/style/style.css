@@ -62,6 +62,7 @@ a:hover {
 }
 
 .lg-title-hero {
+  color: #505050;
   font-size: 4.5rem;
   font-weight: 700;
   line-height: 98px;
@@ -120,16 +121,16 @@ a:hover {
 }
 
 .title-exp {
+  color: #565454;
   font-weight: 700;
   line-height: 78px;
   font-size: 50px;
   letter-spacing: 0em;
   text-align: center;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .container-title-exp {
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.25);
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -182,6 +183,7 @@ a:hover {
 }
 
 .text-presentacion {
+  text-align: left;
   font-size: 25px;
   font-weight: 300;
   line-height: 32px;
@@ -227,35 +229,18 @@ a:hover {
   margin-top: 25px;
 }
 
-.container-services {
-  margin-top: 30px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-}
-
 .services-cards-container {
-  margin-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-}
-
-.service-card {
-  width: 18rem;
-  border-radius: 1.25rem;
-}
-
-.service-card-button {
-  border-color: #A12568;
-  background-color: #A12568;
+  margin-top: 5.375rem;
 }
 
 .container-contact {
   margin-top: 30px;
+  margin-bottom: 3.75rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -273,6 +258,31 @@ a:hover {
 
 .text-contact {
   text-align: initial;
+}
+
+footer {
+  background-color: #565454;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 43px 120px;
+  color: white;
+}
+
+.name-footer {
+  font-size: 40px;
+}
+
+.container-menu-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 @media only screen and (max-width: 1522px) {

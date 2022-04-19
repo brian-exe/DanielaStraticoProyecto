@@ -1,0 +1,22 @@
+.container-contact {
+  margin-top: 30px;
+  margin-bottom: 3.75rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.content-contact {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.text-contact {
+  text-align: initial;
+}
+/*# sourceMappingURL=contact.css.map */

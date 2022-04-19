@@ -1,11 +1,11 @@
-import { Container, Row, Col, Form, Button} from "react-bootstrap";
+import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import React from 'react';
 
 function Contact() {
-    function handleClick(){
+    function handleClick() {
         console.log('hola')
     }
-    return ( 
+    return (
         <Container className="container-contact" >
             <Row>
                 <div className='container-title-exp'>
@@ -13,14 +13,10 @@ function Contact() {
                 </div>
             </Row>
             <Row className="content-contact">
-                <Col className="lg-title-hero">
-                    <Row className="text-nombre"><h1 className="lg-title-hero">Tu consulta</h1></Row>
-                    <Row className="text-nombre"><h1 className="lg-title-hero"> es bien</h1></Row>
-                    <Row className="text-nombre"><h1 className="lg-title-hero"> recibida.</h1></Row>
-                    <Row className="text-presentacion"><h4>Enviá tu consulta y estaré respondiéndote a la brevedad posible.</h4></Row>
-                    <Row className="text-presentacion"><h4>
-                        Abrazo,
-                        Daniela.</h4></Row>
+                <Col>
+                    <Row><h2 className="lg-title-hero">Tu consulta es bien recibida.</h2></Row>
+                    <Row><h4 className="text-presentacion">Enviá tu consulta y estaré respondiéndote a la brevedad posible.</h4></Row>
+                    <Row><h4 className="text-presentacion">Abrazo, <br></br> Daniela.</h4></Row>
                 </Col>
                 <Col>
                     <Form className="col-md-6">
@@ -28,7 +24,7 @@ function Contact() {
                             <Form.Control type="text" placeholder="Nombre" />
                         </Form.Group>
                         <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                            <Form.Control style={{resize:'none'}} as="textarea" rows={3} placeholder="Mensaje..."/>
+                            <Form.Control style={{ resize: 'none' }} as="textarea" rows={3} placeholder="Mensaje..." />
                         </Form.Group>
                         <Button onClick={handleClick} className="btn-pink">
                             Submit
