@@ -4,8 +4,7 @@ import Services from './components/services/services';
 import { NavMenu } from './components/navbar/nav';
 import Contact from './components/contact/contact';
 import Footer from './components/footer/footer';
-import { Container } from 'react-bootstrap';
-import React, { Component }  from 'react';
+import React  from 'react';
 import fondoRosa from './assets/fondoRosa.png'
 
 import './style/style.css';
