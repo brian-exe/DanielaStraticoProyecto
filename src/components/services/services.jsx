@@ -65,7 +65,7 @@ function Services() {
                 </Modal.Body>
             </Modal>
 
-            <Modal show={show} onHide={handleClose} centered>
+            {/* <Modal show={show} onHide={handleClose} centered>
                 <Modal.Header closeButton>
                     <Modal.Title>Legales</Modal.Title>
                 </Modal.Header>
@@ -109,7 +109,7 @@ function Services() {
                         <li>Facilitaciones.</li>
                     </ul>
                 </Modal.Body>
-            </Modal>
+            </Modal> */}
         </Container>
     );
 }
