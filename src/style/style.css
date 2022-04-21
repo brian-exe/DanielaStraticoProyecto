@@ -338,7 +338,7 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 43px 120px;
+  padding: 43px 120px 0 43px;
   color: white;
 }
 
@@ -353,6 +353,19 @@ footer {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+.subtext-footer {
+  font-size: 1rem;
+}
+
+.logoFooter {
+  width: 20px;
+  margin-right: 1rem;
+}
+
+.copyright {
+  text-align: right;
 }
 
 /* iPhone 4 ----------- */
@@ -457,6 +470,7 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding: 0;
   }
   .modal-title {
     font-size: 40px;

@@ -1,5 +1,8 @@
-import { Col, Button } from "react-bootstrap";
+import { Col } from "react-bootstrap";
 import React from 'react';
+import logoWpp from '../../assets/logoWhatsapp.png'
+import logoLinkedIn from '../../assets/logoLinkedin.png'
+
 
 function Footer() {
     return (
@@ -7,12 +10,13 @@ function Footer() {
             <Col>
                 <h2 className="name-footer">Daniela Stratico</h2>
                 <h4 className="subtext-footer">Legales & Comunicacion</h4>
+                <div>
+                    <img className="logoFooter" src={logoWpp} alt="logo whatsapp" />
+                    <img className="logoFooter" src={logoLinkedIn} alt="" />
+                </div>
+                <p className="copyright"> Copyright © Daniela Stratico | Todos los derechos reservados.</p>
             </Col>
-            <Col className="container-menu-footer">
-                <Button style={{ textDecoration: 'none', color: 'white' }} variant="link">Servicios</Button>
-                <Button style={{ textDecoration: 'none', color: 'white' }} variant="link">Experiencia</Button>
-                <Button style={{ textDecoration: 'none', color: 'white' }} variant="link">Contacto</Button>
-            </Col>
+            
         </footer>
     );
 }

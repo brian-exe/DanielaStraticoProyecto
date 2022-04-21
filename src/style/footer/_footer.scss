@@ -2,7 +2,7 @@ footer {
     background-color: rgba(86, 84, 84, 1);
     display: flex;
     justify-content: space-between;
-    padding: 43px 120px;
+    padding: 43px 120px 0 43px;
     color: rgba(255, 255, 255, 1);
 }
 
@@ -13,4 +13,17 @@ footer {
 .container-menu-footer {
     display: flex;
     justify-content: flex-end;
+}
+
+.subtext-footer {
+    font-size: 1rem;
+}
+
+.logoFooter {
+    width: 20px;
+    margin-right: 1rem;
+}
+
+.copyright {
+    text-align: right;
 }
