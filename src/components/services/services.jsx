@@ -5,12 +5,15 @@ import legalesImg from '../../assets/legalesImg.png'
 import comunicacionImg from '../../assets/comunicacionImg.png'
 import coachingImg from '../../assets/coachingImg.png'
 import Modal from 'react-bootstrap/Modal'
-import { Button } from 'react-bootstrap'
 
 function Services() {
-    const [show, setShow] = useState(false);
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
+    const [showComunicacionModal, setShowComunicacionModal] = useState(false);
+    const [showLegalesModal, setShowLegalesModal] = useState(false);
+    const [showConsultoriaModal, setShowConsultoriaModal] = useState(false);
+    
+    const handleClose = (setFunction) => setFunction(false);
+    const handleShow = (setFunction) => setFunction(true);
+
     return (
         <Container className="container-services">
             <Row>
@@ -19,27 +22,23 @@ function Services() {
                 </div>
             </Row>
             <Row className="services-cards-container" >
-                {/* <div onClick={handleShow}> */}
                 <ServiceCard
+                    onClick = {()=> {handleShow(setShowComunicacionModal)}}
                     title="Legales"
                     imgSrc={legalesImg} />
-                {/* </div> */}
                 <ServiceCard
+                    onClick = {()=> {handleShow(setShowLegalesModal)}}
                     title="Comunicación"
                     imgSrc={comunicacionImg} />
                 <ServiceCard
+                    onClick = {()=> {handleShow(setShowConsultoriaModal)}}
                     title="Consultoría"
                     imgSrc={coachingImg} />
             </Row>
-            <Button variant="primary" onClick={handleShow}>
-                Launch demo modal
-            </Button>
-
-
 
             {/*  DEJO ABAJO LOS TRES MODALES PARA ASOCIAR AL SERVICE CARD */}
             
-            <Modal show={show} onHide={handleClose} centered>
+            <Modal show={showComunicacionModal} onHide={()=> {handleClose(setShowComunicacionModal)}} centered>
                 <Modal.Header closeButton>
                     <Modal.Title>Comunicación</Modal.Title>
                 </Modal.Header>
@@ -65,7 +64,7 @@ function Services() {
                 </Modal.Body>
             </Modal>
 
-            {/* <Modal show={show} onHide={handleClose} centered>
+            <Modal show={showLegalesModal} onHide={()=> {handleClose(setShowLegalesModal)}} centered>
                 <Modal.Header closeButton>
                     <Modal.Title>Legales</Modal.Title>
                 </Modal.Header>
@@ -87,7 +86,7 @@ function Services() {
                 </Modal.Body>
             </Modal>
 
-            <Modal show={show} onHide={handleClose} centered>
+            <Modal show={showConsultoriaModal} onHide={()=> {handleClose(setShowConsultoriaModal)}} centered>
                 <Modal.Header closeButton>
                     <Modal.Title>Consultoría</Modal.Title>
                 </Modal.Header>
@@ -109,7 +108,7 @@ function Services() {
                         <li>Facilitaciones.</li>
                     </ul>
                 </Modal.Body>
-            </Modal> */}
+            </Modal>
         </Container>
     );
 }

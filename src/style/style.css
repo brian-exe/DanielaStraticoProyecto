@@ -268,6 +268,7 @@ a:hover {
   -webkit-box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.64);
           box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.64);
   padding: 30px;
+  cursor: pointer;
 }
 
 .card-img-top {
