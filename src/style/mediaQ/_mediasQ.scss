@@ -2,7 +2,7 @@
 @media only screen and (max-width:319px) {}
 
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-width : 280px) and (max-width : 800px) {
+@media only screen and (min-width : 280px) and (max-width : 650px) {
     .navbar {
         margin: 3rem 1rem;
     }
@@ -100,8 +100,65 @@
     }
 }
 
+@media only screen and (min-width : 650px) and (max-width : 767px) {
+    .container-hero {
+        & img {
+            width: 80%;
+        }
+    }
+    .lg-title-hero {
+        font-size: 1.7rem;
+        line-height: unset;
+    }
+
+    .container-btn {
+        margin-top: 2rem;
+    }
+
+    .text-hero {
+        font-size: 1.1rem;
+    }
+
+    .container-text-hero {
+        width: 100%;
+    }
+
+    .text-presentacion {
+        font-size: 20px;
+    }
+
+    .title-exp {
+        font-size: 40px;
+    }
+
+    .description-years {
+        font-size: 20px;
+    }
+
+    .container-experiencia-text-img {
+        flex-direction: column;
+    }
+
+    .cont-text-img-exp {
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .years-exp {
+        font-size: 50px;
+    }
+
+    .img-exp {
+        margin: 0;
+    }
+
+    .service-card {
+        width: 30%;
+    }
+}
 /* iPads (portrait and landscape) ----------- */
-@media only screen and (min-width : 801px) and (max-width : 1023px) {
+@media only screen and (min-width : 7681px) and (max-width : 1023px) {
     .lg-title-hero {
         font-size: 2rem;
         line-height: unset;
@@ -112,11 +169,11 @@
     }
 
     .text-hero {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
     }
 
     .container-text-hero {
-        width: 90%;
+        width: 100%;
     }
 
     .text-presentacion {
@@ -154,8 +211,6 @@
     }
 }
 
-@media only screen and (min-width : 992px) and (max-width : 1024px) {}
-
 @media only screen and (min-width : 1025px) and (max-width : 1121px) {
     .lg-title-hero {
         font-size: 2.5rem;
@@ -182,12 +237,17 @@
     }
 }
 
-@media only screen and (min-width : 1122px) and (max-width : 1137px) {}
+@media only screen and (min-width : 1122px) and (max-width : 1137px) {
+    
+}
 
 
 @media only screen and (min-width : 1138px) and (max-width : 1423px) {
     .lg-title-hero {
         font-size: 3rem;
+    }
+    .text-presentacion {
+        font-size: 20px;
     }
 }
 

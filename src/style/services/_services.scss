@@ -17,3 +17,28 @@
     margin-left: auto;
     padding: 40px 20px;
 }
+.modal-dialog {
+    max-width: unset;
+}
+.modal-content {
+    border-radius: 52px;
+    width: 70%;
+    padding: 0 2rem 2rem 2rem;
+    margin-right: auto;
+    margin-left: auto;
+    &>* {
+        color: rgba(112, 112, 112, 1);
+    }
+}
+.modal-header {
+    border-bottom: unset;
+    >* {
+        color: rgba(80, 80, 80, 1);
+    }
+}
+.modal-title {
+    font-family: Roboto;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 110px;
+}

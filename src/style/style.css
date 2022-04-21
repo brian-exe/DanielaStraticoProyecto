@@ -277,6 +277,37 @@ a:hover {
   padding: 40px 20px;
 }
 
+.modal-dialog {
+  max-width: unset;
+}
+
+.modal-content {
+  border-radius: 52px;
+  width: 70%;
+  padding: 0 2rem 2rem 2rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.modal-content > * {
+  color: #707070;
+}
+
+.modal-header {
+  border-bottom: unset;
+}
+
+.modal-header > * {
+  color: #505050;
+}
+
+.modal-title {
+  font-family: Roboto;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 110px;
+}
+
 .container-contact {
   margin-top: 30px;
   margin-bottom: 3.75rem;
@@ -326,7 +357,7 @@ footer {
 
 /* iPhone 4 ----------- */
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-width: 280px) and (max-width: 800px) {
+@media only screen and (min-width: 280px) and (max-width: 650px) {
   .navbar {
     margin: 3rem 1rem;
   }
@@ -429,8 +460,61 @@ footer {
   }
 }
 
+@media only screen and (min-width: 650px) and (max-width: 767px) {
+  .container-hero img {
+    width: 80%;
+  }
+  .lg-title-hero {
+    font-size: 1.7rem;
+    line-height: unset;
+  }
+  .container-btn {
+    margin-top: 2rem;
+  }
+  .text-hero {
+    font-size: 1.1rem;
+  }
+  .container-text-hero {
+    width: 100%;
+  }
+  .text-presentacion {
+    font-size: 20px;
+  }
+  .title-exp {
+    font-size: 40px;
+  }
+  .description-years {
+    font-size: 20px;
+  }
+  .container-experiencia-text-img {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .cont-text-img-exp {
+    margin-top: 5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .years-exp {
+    font-size: 50px;
+  }
+  .img-exp {
+    margin: 0;
+  }
+  .service-card {
+    width: 30%;
+  }
+}
+
 /* iPads (portrait and landscape) ----------- */
-@media only screen and (min-width: 801px) and (max-width: 1023px) {
+@media only screen and (min-width: 7681px) and (max-width: 1023px) {
   .lg-title-hero {
     font-size: 2rem;
     line-height: unset;
@@ -439,10 +523,10 @@ footer {
     margin-top: 2rem;
   }
   .text-hero {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
   .container-text-hero {
-    width: 90%;
+    width: 100%;
   }
   .text-presentacion {
     font-size: 20px;
@@ -504,6 +588,9 @@ footer {
 @media only screen and (min-width: 1138px) and (max-width: 1423px) {
   .lg-title-hero {
     font-size: 3rem;
+  }
+  .text-presentacion {
+    font-size: 20px;
   }
 }
 
