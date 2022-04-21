@@ -97,7 +97,30 @@
 
     footer {
         flex-direction: column;
-        padding: 0;
+        padding: 1.5rem 1rem 0 1rem;
+    }
+
+    .name-footer {
+        font-size: 25px;
+    }
+    
+    .container-menu-footer {
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .subtext-footer {
+        font-size: .8rem;
+    }
+    
+    .logoFooter {
+        width: 15px;
+        margin-right: 1rem;
+    }
+    
+    .copyright {
+        font-size: .6rem;
+        text-align: right;
     }
     .modal-title {
         font-size: 40px;
@@ -167,9 +190,31 @@
     .service-card {
         width: 30%;
     }
+    .name-footer {
+        font-size: 35px;
+    }
+    
+    .container-menu-footer {
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .subtext-footer {
+        font-size: .8rem;
+    }
+    
+    .logoFooter {
+        width: 15px;
+        margin-right: 1rem;
+    }
+    
+    .copyright {
+        font-size: .7rem;
+        text-align: right;
+    }
 }
 /* iPads (portrait and landscape) ----------- */
-@media only screen and (min-width : 7681px) and (max-width : 1023px) {
+@media only screen and (min-width : 781px) and (max-width : 1024px) {
     .lg-title-hero {
         font-size: 2rem;
         line-height: unset;
@@ -222,9 +267,10 @@
     }
 }
 
-@media only screen and (min-width : 1025px) and (max-width : 1121px) {
+@media only screen and (min-width : 1025px) and (max-width : 1137px) {
     .lg-title-hero {
         font-size: 2.5rem;
+        line-height: unset;
     }
 
     .container-btn {
@@ -246,12 +292,10 @@
     .description-years {
         font-size: 20px;
     }
+    .service-card {
+        width: 30%;
+    }
 }
-
-@media only screen and (min-width : 1122px) and (max-width : 1137px) {
-    
-}
-
 
 @media only screen and (min-width : 1138px) and (max-width : 1423px) {
     .lg-title-hero {
@@ -259,6 +303,9 @@
     }
     .text-presentacion {
         font-size: 20px;
+    }
+    .service-card {
+        width: 30%;
     }
 }
 
