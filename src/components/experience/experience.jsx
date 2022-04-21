@@ -10,7 +10,7 @@ function Experience() {
                     <h2 className='title-exp'>Experiencia</h2>
                 </div>
             </Row>
-            <Row>
+            <div className="container-experiencia-text-img">
                 <Col className="text-exp">
                     <Row>
                         <h3 className="text-primary-color text-title">¡Hola!</h3>
@@ -29,7 +29,7 @@ function Experience() {
                 </Col>
                 <Col className="cont-text-img-exp">
                     <Row className="img-exp"> <img src={expImg} alt="" /></Row>
-                    <Row>
+                    <div className="container-experience-years">
                         <Col className="container-years">
                             <Row className="text-primary-color container-years-exp "> <h1 className="years-exp">+5 <span className="years-text-exp">años</span></h1> </Row>
                             <Row> <Col> <p className="description-years">Facilitando procesos individuales y colectivos para generar armonía vincular</p> </Col> </Row>
@@ -38,9 +38,9 @@ function Experience() {
                             <Row className="text-primary-color container-years-exp "> <h1 className="years-exp">+10 <span className="years-text-exp">años</span></h1></Row>
                             <Row> <Col> <p className="description-years">Desarrollándome en la industria legal en materia de derecho privado</p> </Col> </Row>
                         </Col>
-                    </Row>
+                    </div>
                 </Col>
-            </Row>
+            </div>
         </Container>
     );
 }

@@ -8,7 +8,10 @@
   max-height: 80%;
   max-width: 100%;
 }
-
+.container-experiencia-text-img {
+  display: flex;
+  flex-direction: row;
+}
 .title-exp {
   color: rgba(86, 84, 84, 1);
   font-weight: 700;
@@ -104,4 +107,9 @@
 
 .container-bt-sm {
   margin-top: 25px;
+}
+
+.container-experience-years {
+  display: flex;
+  flex-direction: row;
 }

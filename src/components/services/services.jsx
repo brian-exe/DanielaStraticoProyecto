@@ -9,10 +9,8 @@ import { Button } from 'react-bootstrap'
 
 function Services() {
         const [show, setShow] = useState(false);
-
         const handleClose = () => setShow(false);
         const handleShow = () => setShow(true);
-
         return (
             <Container className="container-services">
                 <Row>
@@ -20,10 +18,12 @@ function Services() {
                         <h2 className='title-exp'>Servicios</h2>
                     </div>
                 </Row>
-                <Row className="services-cards-container">
-                    <ServiceCard
+                <Row className="services-cards-container" >
+                    {/* <div onClick={handleShow}> */}
+                    <ServiceCard 
                         title="Legales"
                         imgSrc={legalesImg} />
+                    {/* </div> */}
                     <ServiceCard
                         title="Comunicación"
                         imgSrc={comunicacionImg} />
@@ -31,9 +31,9 @@ function Services() {
                         title="Consultoría"
                         imgSrc={coachingImg} />
                 </Row>
-                <Button variant="primary" onClick={handleShow}>
+                {/* <Button variant="primary" onClick={handleShow}>
                     Launch demo modal
-                </Button>
+                </Button> */}
 
                 <Modal show={show} onHide={handleClose}>
                     <Modal.Header closeButton>

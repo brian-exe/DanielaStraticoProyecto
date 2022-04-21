@@ -1,5 +1,199 @@
-@media only screen and (max-width : 1522px) {
+/* iPhone 4 ----------- */
+@media only screen and (max-width:319px) {}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width : 280px) and (max-width : 800px) {
+    .navbar {
+        margin: 3rem 1rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.6rem;
+    }
+
+    .container-hero {
+        flex-direction: column-reverse;
+        justify-content: center;
+
+        & img {
+            padding: 0 2rem;
+        }
+    }
+
     .lg-title-hero {
-        font-size: 4rem;
+        text-align: center;
+        font-size: 1.875rem;
+        line-height: 40px;
+    }
+
+    .container-text-hero {
+        width: 90%;
+    }
+
+    .text-hero {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .container-btn {
+        margin-right: auto;
+        margin-left: auto;
+        width: fit-content;
+    }
+
+    .container-experiencia-text-img {
+        flex-direction: column;
+    }
+
+    .title-exp {
+        font-size: 35px;
+    }
+
+    .text-title {
+        text-align: center;
+    }
+
+    .text-nombre {
+        text-align: center;
+    }
+
+    .text-presentacion {
+        text-align: center;
+
+        font-size: 1.2rem;
+    }
+
+    .container-experience-years {
+        flex-direction: column;
+        margin: 2rem 0;
+    }
+
+    .img-exp {
+        margin: 0;
+    }
+
+    .container-bt-sm {
+        width: fit-content;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .cont-text-img-exp {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .service-card {
+        margin: 1rem 0;
+    }
+
+    .services-cards-container {
+        margin-top: 1rem;
+    }
+
+    .content-contact {
+        flex-direction: column;
+    }
+
+    footer {
+        flex-direction: column;
     }
 }
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-width : 801px) and (max-width : 1023px) {
+    .lg-title-hero {
+        font-size: 2rem;
+        line-height: unset;
+    }
+
+    .container-btn {
+        margin-top: 2rem;
+    }
+
+    .text-hero {
+        font-size: 1.4rem;
+    }
+
+    .container-text-hero {
+        width: 90%;
+    }
+
+    .text-presentacion {
+        font-size: 20px;
+    }
+
+    .title-exp {
+        font-size: 40px;
+    }
+
+    .description-years {
+        font-size: 20px;
+    }
+
+    .container-experiencia-text-img {
+        flex-direction: column;
+    }
+
+    .cont-text-img-exp {
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .years-exp {
+        font-size: 50px;
+    }
+
+    .img-exp {
+        margin: 0;
+    }
+
+    .service-card {
+        width: 30%;
+    }
+}
+
+@media only screen and (min-width : 992px) and (max-width : 1024px) {}
+
+@media only screen and (min-width : 1025px) and (max-width : 1121px) {
+    .lg-title-hero {
+        font-size: 2.5rem;
+    }
+
+    .container-btn {
+        margin-top: 2rem;
+    }
+
+    .container-text-hero {
+        width: 90%;
+    }
+
+    .text-presentacion {
+        font-size: 20px;
+    }
+
+    .title-exp {
+        font-size: 40px;
+    }
+
+    .description-years {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width : 1122px) and (max-width : 1137px) {}
+
+
+@media only screen and (min-width : 1138px) and (max-width : 1423px) {
+    .lg-title-hero {
+        font-size: 3rem;
+    }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) and (max-width: 1823px) {}
+
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {}
