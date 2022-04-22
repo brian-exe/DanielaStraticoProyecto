@@ -4,7 +4,7 @@ import expImg from '../../assets/experienceImg.png'
 
 function Experience() {
     return (
-        <Container className='container-exp'>
+        <Container id="experience" className='container-exp'>
             <Row>
                 <div className='container-title-exp'>
                     <h2 className='title-exp'>Experiencia</h2>

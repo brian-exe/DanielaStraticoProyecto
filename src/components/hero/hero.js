@@ -4,7 +4,7 @@ import heroImg from '../../assets/heroImg.png'
 
 export const Hero = () => {
     return (
-        <Container className='container-hero'>
+        <Container id="hero" className='container-hero'>
             <div className='container-text-hero'>
                 <h2 className='lg-title-hero'>Consultoría Legal y Comunicación</h2>
                 <p className='text-hero'>Facilitar las relaciones y contingencias legales de manera versátil, según las necesidades específicas del contexto.</p>

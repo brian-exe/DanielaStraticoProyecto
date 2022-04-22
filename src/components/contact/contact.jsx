@@ -1,12 +1,12 @@
-import { Container, Row, Col, Form, Button } from "react-bootstrap";
+import { Container, Row, Col, Form, Button, Dropdown,  } from "react-bootstrap";
 import React from 'react';
 const {useState} = React;
 
 function Contact() {
     const [nombre, setNombre] = useState('');
     const [mensaje, setMensaje] = useState('');
-    //const nroTelefono = "541168090888";
-    const nroTelefono = "541111111111";
+    const nroTelefono = "541168090888";
+    const mail = "daniela.stratico@gmail.com";
 
 
     const onNombreChange = ({target:{value}}) => setNombre(value);
@@ -18,19 +18,29 @@ function Contact() {
     }
 
     const buildWhatsappUrl= (nombre, mensaje)=> {
-        return "https://wa.me/"+ nroTelefono + "?text=Hola mi nombre es *" + nombre.trim() + "*. Mi consulta es: *" + mensaje.trim() + "*."
+        return "https://wa.me/"+ nroTelefono + "?text=Hola, mi nombre es *" + nombre.trim() + "*. Mi consulta es: *" + mensaje.trim() + "*."
+    }
+
+    const buildGmailUrl= (nombre, mensaje)=> {
+        return "https://mail.google.com/mail/u/0/?source=mailto&to="+ mail + "&fs=1&tf=cm&su=Consulta via web&body=Hola, mi nombre es " + nombre.trim() + ". Mi consulta es: " + mensaje.trim() + "."
     }
 
     //https://mail.google.com/mail/u/0/?source=mailto&to=daniela.stratico@gmail.com&fs=1&tf=cm&body=hola&su=consulta
 
-    const onSubmit = e => {
+    const openWhatsapp = e => {
         e.preventDefault()
         const whatsappUrl = buildWhatsappUrl(nombre, mensaje);
         openInNewTab(whatsappUrl);
     }
 
+    const openGmail = e => {
+        e.preventDefault()
+        const gmailUrl = buildGmailUrl(nombre, mensaje);
+        openInNewTab(gmailUrl);
+    }
+
     return (
-        <Container className="container-contact" >
+        <Container id="contact" className="container-contact" >
             <Row>
                 <div className='container-title-exp'>
                     <h2 className='title-exp'>Contacto</h2>
@@ -55,9 +65,17 @@ function Contact() {
                                         onChange={onMensajeChange} 
                                         value={mensaje} />
                             </Form.Group>
-                            <Button type="submit" onClick={onSubmit} className="btn-pink">
-                                Enviar
-                            </Button>
+                            <Dropdown>
+                                <Dropdown.Toggle style={{ borderRadius: '5px', background: '#BC448C', borderColor: '#BC448C', color: 'white'}} variant="success" id="dropdown-basic">
+                                    Enviar
+                                </Dropdown.Toggle>
+
+                                <Dropdown.Menu>
+                                    <Dropdown.Item onClick={openWhatsapp}>Whatsapp</Dropdown.Item>
+                                    <Dropdown.Divider />
+                                    <Dropdown.Item onClick={openGmail} >Gmail</Dropdown.Item>
+                                </Dropdown.Menu>
+                            </Dropdown>
                         </Form>
                     </Row>
                 </Col>
