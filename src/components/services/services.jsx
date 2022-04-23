@@ -24,11 +24,11 @@ function Services() {
             <Row className="services-cards-container" >
                 <ServiceCard
                     onClick = {()=> {handleShow(setShowComunicacionModal)}}
-                    title="Legales"
+                    title="Comunicacion"
                     imgSrc={legalesImg} />
                 <ServiceCard
                     onClick = {()=> {handleShow(setShowLegalesModal)}}
-                    title="Comunicación"
+                    title="Legales"
                     imgSrc={comunicacionImg} />
                 <ServiceCard
                     onClick = {()=> {handleShow(setShowConsultoriaModal)}}
