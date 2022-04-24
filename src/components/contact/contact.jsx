@@ -66,7 +66,7 @@ function Contact() {
                                         value={mensaje} />
                             </Form.Group>
                             <Dropdown>
-                                <Dropdown.Toggle style={{ borderRadius: '5px', background: '#BC448C', borderColor: '#BC448C', color: 'white'}} variant="success" id="dropdown-basic">
+                                <Dropdown.Toggle disabled={!(nombre && mensaje)} style={{ borderRadius: '5px', background: '#BC448C', borderColor: '#BC448C', color: 'white'}} variant="success" id="dropdown-basic">
                                     Enviar
                                 </Dropdown.Toggle>
 
