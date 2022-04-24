@@ -8,12 +8,14 @@ import React  from 'react';
 import fondoRosa from './assets/fondoRosa.png'
 
 import './style/style.css';
+import { Button } from 'react-bootstrap';
+import {FaArrowUp} from 'react-icons/fa';
 
 function App() {
   return (
     <div className="App">
-      <NavMenu />
-      <Hero />
+      <NavMenu id="top"/>
+      <Hero id="hero"/>
       <Experience />
       <div style={{ 
         backgroundImage:`url(${fondoRosa})`, 
@@ -23,6 +25,12 @@ function App() {
         <Contact/>
         <Footer/>
       </div>
+      <Button href="#top"
+        className="btn btn-danger btn-floating btn-lg rounded-circle"
+        id="btn-back-to-top"
+        >
+        <FaArrowUp/>
+      </Button>
     </div>
   );
 }

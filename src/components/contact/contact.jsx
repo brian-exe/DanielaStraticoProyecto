@@ -1,5 +1,6 @@
 import { Container, Row, Col, Form, Button, Dropdown,  } from "react-bootstrap";
 import React from 'react';
+import {IoLogoWhatsapp, IoMail} from 'react-icons/io5'
 const {useState} = React;
 
 function Contact() {
@@ -48,32 +49,32 @@ function Contact() {
             </Row>
             <Row className="content-contact">
                 <Col>
-                    <Row><h2 className="lg-title-hero">Tu consulta es bien recibida.</h2></Row>
+                    <Row><h2 className="lg-title-contact">Tu consulta es bien recibida.</h2></Row>
                     <Row><h4 className="text-presentacion">Enviá tu consulta y estaré respondiéndote a la brevedad posible.</h4></Row>
                     <Row><h4 className="text-presentacion">Abrazo, <br></br> Daniela.</h4></Row>
                 </Col>
                 <Col>
-                    <Row>
-                        <Form className="col-md-6">
+                    <Row style={{placeContent:'center'}}>
+                        <Form className="col-md-6 col-lg-10">
                             <Form.Group className="mb-3" controlId="nombre">
-                                <Form.Control type="text" placeholder="Nombre" 
+                                <Form.Control type="text" placeholder="Tu nombre" 
                                         onChange={onNombreChange} 
                                         value={nombre} />
                             </Form.Group>
                             <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                                <Form.Control style={{ resize: 'none' }} as="textarea" rows={3} placeholder="Mensaje..."
+                                <Form.Control style={{ resize: 'none' }} as="textarea" rows={5} placeholder="Escribí tu mensaje..."
                                         onChange={onMensajeChange} 
                                         value={mensaje} />
                             </Form.Group>
                             <Dropdown>
-                                <Dropdown.Toggle disabled={!(nombre && mensaje)} style={{ borderRadius: '5px', background: '#BC448C', borderColor: '#BC448C', color: 'white'}} variant="success" id="dropdown-basic">
+                                <Dropdown.Toggle disabled={!(nombre && mensaje)} style={{ borderRadius: '5px', background: '#BC448C', borderColor: '#BC448C', color: 'white', width:'100%'}} variant="success" id="dropdown-basic">
                                     Enviar
                                 </Dropdown.Toggle>
 
-                                <Dropdown.Menu>
-                                    <Dropdown.Item onClick={openWhatsapp}>Whatsapp</Dropdown.Item>
+                                <Dropdown.Menu style={{textAlign:'center', width:'100%'}}>
+                                    <Dropdown.Item onClick={openWhatsapp}>Whatsapp <IoLogoWhatsapp/> </Dropdown.Item>
                                     <Dropdown.Divider />
-                                    <Dropdown.Item onClick={openGmail} >Gmail</Dropdown.Item>
+                                    <Dropdown.Item onClick={openGmail} >Gmail <IoMail/></Dropdown.Item>
                                 </Dropdown.Menu>
                             </Dropdown>
                         </Form>

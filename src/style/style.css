@@ -331,6 +331,21 @@ a:hover {
   text-align: initial;
 }
 
+.lg-title-contact {
+  color: #505050;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 90%;
+}
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
 footer {
   background-color: #565454;
   display: -webkit-box;
