@@ -2,7 +2,7 @@
 @media only screen and (max-width:319px) {}
 
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-width : 280px) and (max-width : 650px) {
+@media only screen and (min-width : 280px) and (max-width : 759px) {
     .navbar {
         margin: 3rem 1rem;
     }
@@ -10,13 +10,17 @@
     .navbar-brand {
         font-size: 1.6rem;
     }
-
+    .container-img {
+        width: 80%;
+    }
     .container-hero {
         flex-direction: column-reverse;
         justify-content: center;
 
         & img {
             padding: 0 2rem;
+            margin-right: auto;
+            margin-left: auto;
         }
     }
 
@@ -24,6 +28,7 @@
         text-align: center;
         font-size: 1.875rem;
         line-height: 40px;
+        width: 100%;
     }
 
     .container-text-hero {
@@ -33,12 +38,15 @@
     .text-hero {
         font-size: 20px;
         text-align: center;
+        width: 100%;
+
     }
 
     .container-btn {
         margin-right: auto;
         margin-left: auto;
         width: fit-content;
+        margin-top: 40px;
     }
 
     .container-experiencia-text-img {
@@ -139,7 +147,13 @@
     }
 }
 
-@media only screen and (min-width : 650px) and (max-width : 767px) {
+@media only screen and (min-width : 760px) and (max-width : 780px) {
+    .navbar-brand {
+        font-size: 1.3rem;
+    }
+    .nav-link {
+        font-size: 1rem;
+    }
     .container-hero {
         & img {
             width: 80%;
@@ -223,17 +237,25 @@
 }
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-width : 781px) and (max-width : 1024px) {
+    .navbar-brand {
+        font-size: 1.4rem;
+    }
+    .nav-link {
+        font-size: 1.2rem;
+    }
     .lg-title-hero {
-        font-size: 2rem;
+        font-size: 1.8rem;
         line-height: unset;
     }
-
+    .container-img {
+        width: 80%;
+    }
     .container-btn {
         margin-top: 2rem;
     }
 
     .text-hero {
-        font-size: 1.5rem;
+        font-size: 1.1rem;
     }
 
     .container-text-hero {
@@ -279,11 +301,19 @@
 }
 
 @media only screen and (min-width : 1025px) and (max-width : 1137px) {
+    .container-img {
+        width: 70%;
+    }
     .lg-title-hero {
         font-size: 2.5rem;
         line-height: unset;
     }
-
+    .container-text-hero {
+        width: 90%;
+    }
+    .text-hero {
+        font-size: 1.3rem;
+    }
     .container-btn {
         margin-top: 2rem;
     }
@@ -311,6 +341,17 @@
 @media only screen and (min-width : 1138px) and (max-width : 1423px) {
     .lg-title-hero {
         font-size: 3rem;
+        line-height: unset;
+    }
+    
+    .text-hero {
+        font-size: 1.4rem;
+    }
+    .container-btn {
+        margin-top: 35px;
+    }
+    .container-text-hero {
+        width: 90%;
     }
     .text-presentacion {
         font-size: 20px;
