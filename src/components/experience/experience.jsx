@@ -1,6 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import React from 'react';
-import expImg from '../../assets/experienceImg.png'
+import expImg from '../../assets/experienceImg.png';
+import ScrollButton from "../scrollToTop/scrollToTop";
 
 function Experience() {
     return (

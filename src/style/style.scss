@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -14,6 +15,17 @@ a {
         color: white;
     }
 }
+
+// .scrollImg {
+//     width: 109px;
+//     cursor: pointer;
+// }
+
+// .stickyCont {
+//     position: sticky;
+//     float: right;
+//     top: 0;
+// }
 @import './nav/nav';
 @import './hero/hero';
 @import './experience/experience';
