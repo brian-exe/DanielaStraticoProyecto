@@ -132,6 +132,11 @@
     .modal-header {
         padding: 0 1rem;
     }
+    .lg-title-contact {
+        font-size: 2rem;
+        text-align: center;
+        width: 100%;
+    }
 }
 
 @media only screen and (min-width : 650px) and (max-width : 767px) {
@@ -158,7 +163,7 @@
     }
 
     .text-presentacion {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .title-exp {
@@ -176,7 +181,7 @@
     .cont-text-img-exp {
         margin-top: 5rem;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
 
     .years-exp {
@@ -211,6 +216,9 @@
     .copyright {
         font-size: .7rem;
         text-align: right;
+    }
+    .lg-title-contact {
+        font-size: 2rem;
     }
 }
 /* iPads (portrait and landscape) ----------- */
@@ -264,6 +272,9 @@
 
     .service-card {
         width: 30%;
+    }
+    .lg-title-contact {
+        font-size: 2rem;
     }
 }
 

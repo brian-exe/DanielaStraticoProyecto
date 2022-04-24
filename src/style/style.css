@@ -18,6 +18,20 @@ a:hover {
   color: white;
 }
 
+.scrollImg {
+  width: 109px;
+  cursor: pointer;
+}
+
+.stickyCont {
+  position: -webkit-sticky;
+  position: sticky;
+  float: right;
+  top: 0;
+  bottom: 0;
+  z-index: 99;
+}
+
 .navbar-collapse {
   -webkit-box-flex: unset;
       -ms-flex-positive: unset;
@@ -332,6 +346,21 @@ a:hover {
   text-align: initial;
 }
 
+.lg-title-contact {
+  color: #505050;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 90%;
+}
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
 footer {
   background-color: #565454;
   display: -webkit-box;
@@ -506,6 +535,11 @@ footer {
   .modal-header {
     padding: 0 1rem;
   }
+  .lg-title-contact {
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+  }
 }
 
 @media only screen and (min-width: 650px) and (max-width: 767px) {
@@ -526,7 +560,7 @@ footer {
     width: 100%;
   }
   .text-presentacion {
-    font-size: 20px;
+    font-size: 18px;
   }
   .title-exp {
     font-size: 40px;
@@ -545,10 +579,10 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .years-exp {
     font-size: 50px;
@@ -580,6 +614,9 @@ footer {
   .copyright {
     font-size: .7rem;
     text-align: right;
+  }
+  .lg-title-contact {
+    font-size: 2rem;
   }
 }
 
@@ -631,6 +668,9 @@ footer {
   }
   .service-card {
     width: 30%;
+  }
+  .lg-title-contact {
+    font-size: 2rem;
   }
 }
 
