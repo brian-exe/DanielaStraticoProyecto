@@ -18,6 +18,19 @@ a:hover {
   color: white;
 }
 
+.scrollImg {
+  width: 109px;
+  cursor: pointer;
+}
+
+.stickyCont {
+  position: fixed;
+  float: right;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+}
+
 .navbar-collapse {
   -webkit-box-flex: unset;
       -ms-flex-positive: unset;
@@ -332,6 +345,21 @@ a:hover {
   text-align: initial;
 }
 
+.lg-title-contact {
+  color: #505050;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 90%;
+}
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
 footer {
   background-color: #565454;
   display: -webkit-box;
@@ -371,12 +399,15 @@ footer {
 }
 
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-width: 280px) and (max-width: 650px) {
+@media only screen and (min-width: 280px) and (max-width: 759px) {
   .navbar {
     margin: 3rem 1rem;
   }
   .navbar-brand {
     font-size: 1.6rem;
+  }
+  .container-img {
+    width: 80%;
   }
   .container-hero {
     -webkit-box-orient: vertical;
@@ -389,11 +420,14 @@ footer {
   }
   .container-hero img {
     padding: 0 2rem;
+    margin-right: auto;
+    margin-left: auto;
   }
   .lg-title-hero {
     text-align: center;
     font-size: 1.875rem;
     line-height: 40px;
+    width: 100%;
   }
   .container-text-hero {
     width: 90%;
@@ -401,6 +435,7 @@ footer {
   .text-hero {
     font-size: 20px;
     text-align: center;
+    width: 100%;
   }
   .container-btn {
     margin-right: auto;
@@ -408,6 +443,7 @@ footer {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
+    margin-top: 40px;
   }
   .container-experiencia-text-img {
     -webkit-box-orient: vertical;
@@ -505,15 +541,111 @@ footer {
   .modal-header {
     padding: 0 1rem;
   }
+  .lg-title-contact {
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+  }
 }
 
-@media only screen and (min-width: 650px) and (max-width: 767px) {
+@media only screen and (min-width: 760px) and (max-width: 780px) {
+  .navbar-brand {
+    font-size: 1.3rem;
+  }
+  .nav-link {
+    font-size: 1rem;
+  }
   .container-hero img {
     width: 80%;
   }
   .lg-title-hero {
     font-size: 1.7rem;
     line-height: unset;
+  }
+  .container-btn {
+    margin-top: 2rem;
+  }
+  .text-hero {
+    font-size: 1.1rem;
+  }
+  .container-text-hero {
+    width: 100%;
+  }
+  .text-presentacion {
+    font-size: 18px;
+  }
+  .title-exp {
+    font-size: 40px;
+  }
+  .description-years {
+    font-size: 20px;
+  }
+  .container-experiencia-text-img {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .cont-text-img-exp {
+    margin-top: 5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .years-exp {
+    font-size: 50px;
+  }
+  .img-exp {
+    margin: 0;
+  }
+  .service-card {
+    width: 30%;
+  }
+  .name-footer {
+    font-size: 35px;
+  }
+  .container-menu-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .subtext-footer {
+    font-size: .8rem;
+  }
+  .logoFooter {
+    width: 15px;
+    margin-right: 1rem;
+  }
+  .copyright {
+    font-size: .7rem;
+    text-align: right;
+  }
+  .lg-title-contact {
+    font-size: 2rem;
+  }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-width: 781px) and (max-width: 1024px) {
+  .navbar-brand {
+    font-size: 1.4rem;
+  }
+  .nav-link {
+    font-size: 1.2rem;
+  }
+  .lg-title-hero {
+    font-size: 1.8rem;
+    line-height: unset;
+  }
+  .container-img {
+    width: 80%;
   }
   .container-btn {
     margin-top: 2rem;
@@ -558,85 +690,24 @@ footer {
   .service-card {
     width: 30%;
   }
-  .name-footer {
-    font-size: 35px;
-  }
-  .container-menu-footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
-  .subtext-footer {
-    font-size: .8rem;
-  }
-  .logoFooter {
-    width: 15px;
-    margin-right: 1rem;
-  }
-  .copyright {
-    font-size: .7rem;
-    text-align: right;
-  }
-}
-
-/* iPads (portrait and landscape) ----------- */
-@media only screen and (min-width: 781px) and (max-width: 1024px) {
-  .lg-title-hero {
+  .lg-title-contact {
     font-size: 2rem;
-    line-height: unset;
-  }
-  .container-btn {
-    margin-top: 2rem;
-  }
-  .text-hero {
-    font-size: 1.5rem;
-  }
-  .container-text-hero {
-    width: 100%;
-  }
-  .text-presentacion {
-    font-size: 20px;
-  }
-  .title-exp {
-    font-size: 40px;
-  }
-  .description-years {
-    font-size: 20px;
-  }
-  .container-experiencia-text-img {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .cont-text-img-exp {
-    margin-top: 5rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  .years-exp {
-    font-size: 50px;
-  }
-  .img-exp {
-    margin: 0;
-  }
-  .service-card {
-    width: 30%;
   }
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1137px) {
+  .container-img {
+    width: 70%;
+  }
   .lg-title-hero {
     font-size: 2.5rem;
     line-height: unset;
+  }
+  .container-text-hero {
+    width: 90%;
+  }
+  .text-hero {
+    font-size: 1.3rem;
   }
   .container-btn {
     margin-top: 2rem;
@@ -661,6 +732,16 @@ footer {
 @media only screen and (min-width: 1138px) and (max-width: 1423px) {
   .lg-title-hero {
     font-size: 3rem;
+    line-height: unset;
+  }
+  .text-hero {
+    font-size: 1.4rem;
+  }
+  .container-btn {
+    margin-top: 35px;
+  }
+  .container-text-hero {
+    width: 90%;
   }
   .text-presentacion {
     font-size: 20px;

@@ -14,3 +14,18 @@
 .text-contact {
     text-align: initial;
 }
+
+.lg-title-contact {
+    color: rgba(80, 80, 80, 1);
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 90%;
+}
+
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}

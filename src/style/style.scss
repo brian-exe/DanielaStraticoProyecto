@@ -16,16 +16,18 @@ a {
     }
 }
 
-// .scrollImg {
-//     width: 109px;
-//     cursor: pointer;
-// }
+.scrollImg {
+    width: 109px;
+    cursor: pointer;
+}
 
-// .stickyCont {
-//     position: sticky;
-//     float: right;
-//     top: 0;
-// }
+.stickyCont {
+    position: fixed;
+    float: right;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+}
 @import './nav/nav';
 @import './hero/hero';
 @import './experience/experience';
