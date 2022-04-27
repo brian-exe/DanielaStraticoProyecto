@@ -1,9 +1,12 @@
 .services-cards-container {
     display: flex;
-    justify-content: space-around;
-    margin-top: 5.375rem;
+    justify-content: space-between;
+    margin-top: 4.075rem;
 }
 
+.cont-title-services {
+    margin-top: 17rem;
+}
 .service-card {
     width: 350px;
     border-radius: 52px;

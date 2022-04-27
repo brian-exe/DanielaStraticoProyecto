@@ -10,35 +10,37 @@ function Services() {
     const [showComunicacionModal, setShowComunicacionModal] = useState(false);
     const [showLegalesModal, setShowLegalesModal] = useState(false);
     const [showConsultoriaModal, setShowConsultoriaModal] = useState(false);
-    
+
     const handleClose = (setFunction) => setFunction(false);
     const handleShow = (setFunction) => setFunction(true);
 
     return (
         <Container id="services" className="container-services">
             <Row>
-                <div className='container-title-exp'>
+                <div className='container-title-exp cont-title-services'>
                     <h2 className='title-exp'>Servicios</h2>
                 </div>
             </Row>
             <Row className="services-cards-container" >
                 <ServiceCard
-                    onClick = {()=> {handleShow(setShowComunicacionModal)}}
-                    title="Comunicacion"
-                    imgSrc={legalesImg} />
-                <ServiceCard
-                    onClick = {()=> {handleShow(setShowLegalesModal)}}
-                    title="Legales"
-                    imgSrc={comunicacionImg} />
-                <ServiceCard
-                    onClick = {()=> {handleShow(setShowConsultoriaModal)}}
+                    onClick={() => { handleShow(setShowConsultoriaModal) }}
                     title="Consultoría"
                     imgSrc={coachingImg} />
+                <ServiceCard
+                    onClick={() => { handleShow(setShowLegalesModal) }}
+                    title="Legales"
+                    imgSrc={legalesImg} />
+                <ServiceCard
+                    onClick={() => { handleShow(setShowComunicacionModal) }}
+                    title="Comunicacion"
+                    imgSrc={comunicacionImg} />
+
+
             </Row>
 
             {/*  DEJO ABAJO LOS TRES MODALES PARA ASOCIAR AL SERVICE CARD */}
-            
-            <Modal show={showComunicacionModal} onHide={()=> {handleClose(setShowComunicacionModal)}} centered>
+
+            <Modal show={showComunicacionModal} onHide={() => { handleClose(setShowComunicacionModal) }} centered>
                 <Modal.Header closeButton>
                     <Modal.Title>Comunicación</Modal.Title>
                 </Modal.Header>
@@ -64,7 +66,7 @@ function Services() {
                 </Modal.Body>
             </Modal>
 
-            <Modal show={showLegalesModal} onHide={()=> {handleClose(setShowLegalesModal)}} centered>
+            <Modal show={showLegalesModal} onHide={() => { handleClose(setShowLegalesModal) }} centered>
                 <Modal.Header closeButton>
                     <Modal.Title>Legales</Modal.Title>
                 </Modal.Header>
@@ -86,7 +88,7 @@ function Services() {
                 </Modal.Body>
             </Modal>
 
-            <Modal show={showConsultoriaModal} onHide={()=> {handleClose(setShowConsultoriaModal)}} centered>
+            <Modal show={showConsultoriaModal} onHide={() => { handleClose(setShowConsultoriaModal) }} centered>
                 <Modal.Header closeButton>
                     <Modal.Title>Consultoría</Modal.Title>
                 </Modal.Header>

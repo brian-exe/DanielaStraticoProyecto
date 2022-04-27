@@ -49,9 +49,8 @@ function Contact() {
             </Row>
             <Row className="content-contact">
                 <Col>
-                    <Row><h2 className="lg-title-contact">Tu consulta es bien recibida.</h2></Row>
+                    <Row><h2 className="lg-title-contact">Bienvenida tu consulta.</h2></Row>
                     <Row><h4 className="text-presentacion">Enviá tu consulta y estaré respondiéndote a la brevedad posible.</h4></Row>
-                    <Row><h4 className="text-presentacion">Abrazo, <br></br> Daniela.</h4></Row>
                 </Col>
                 <Col>
                     <Row style={{ placeContent: 'center' }}>

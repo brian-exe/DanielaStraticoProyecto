@@ -5,11 +5,13 @@
 }
 
 .container-exp img {
+  margin-top: 4rem;
   max-height: 80%;
   max-width: 100%;
 }
 .container-experiencia-text-img {
   display: flex;
+  align-items: center;
   flex-direction: row;
 }
 .title-exp {
