@@ -6,7 +6,7 @@ export const NavMenu = () => {
     return (
         <Navbar expand="md">
             <Container>
-                <Navbar.Brand href="#home">Daniela Stratico</Navbar.Brand>
+                <Navbar.Brand href="#home"></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
