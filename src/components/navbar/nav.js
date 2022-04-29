@@ -5,8 +5,7 @@ import { Nav, Container, Navbar} from 'react-bootstrap';
 export const NavMenu = () => {
     return (
         <Navbar expand="md">
-            <Container>
-                <Navbar.Brand href="#home"></Navbar.Brand>
+            <Container style={{justifyContent:'center'}}>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
