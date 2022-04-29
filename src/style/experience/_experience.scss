@@ -34,8 +34,12 @@
 
 .text-primary-color {
   color: #A12568;
-
 }
+
+.text-primary-color:hover {
+  font-weight: bold;
+}
+
 .text-title {
   font-weight: 500;
   font-size: 40px;

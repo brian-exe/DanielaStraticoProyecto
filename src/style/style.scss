@@ -32,6 +32,17 @@ a {
     bottom: 0;
     z-index: 99;
 }
+
+#probando{
+    position: initial;
+    /* top: 46%; */
+    /* left: 49%; */
+    /* transform: translate(37%, 40%); */
+    height: 100px;
+    width: 100%;
+    border-radius: 0px 0px 150px 150px;
+    background-color: white;
+  }
 @import './nav/nav';
 @import './hero/hero';
 @import './experience/experience';

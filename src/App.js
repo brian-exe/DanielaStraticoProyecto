@@ -6,7 +6,7 @@ import { NavMenu } from './components/navbar/nav';
 import Contact from './components/contact/contact';
 import Footer from './components/footer/footer';
 import React from 'react';
-import fondoRosa from './assets/fondoRosa.png'
+import fondoRosa from './assets/fondoRosa.svg'
 import ScrollButton from './components/scrollToTop/scrollToTop';
 import './style/style.css';
 
@@ -18,8 +18,9 @@ function App() {
       <ScrollButton />
       <Experience />
       
-      <div className='cont-background-pink' style={{
+      <div  style={{
         backgroundImage: `url(${fondoRosa})`,
+        //backgroundColor:'#E3BDD1',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat'
       }}>

@@ -35,6 +35,17 @@ a:hover {
   z-index: 99;
 }
 
+#probando {
+  position: initial;
+  /* top: 46%; */
+  /* left: 49%; */
+  /* transform: translate(37%, 40%); */
+  height: 100px;
+  width: 100%;
+  border-radius: 0px 0px 150px 150px;
+  background-color: white;
+}
+
 .navbar-collapse {
   -webkit-box-flex: unset;
       -ms-flex-positive: unset;
@@ -178,6 +189,10 @@ a:hover {
 
 .text-primary-color {
   color: #A12568;
+}
+
+.text-primary-color:hover {
+  font-weight: bold;
 }
 
 .text-title {
