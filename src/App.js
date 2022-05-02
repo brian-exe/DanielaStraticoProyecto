@@ -19,12 +19,13 @@ function App() {
       <Experience />
       
       <div  style={{
+        marginTop: "-5rem",
         backgroundImage: `url(${fondoRosa})`,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: '50% 50%'
       }}>
-        <div style={{height:'100px'}}></div>
+        <div className='div-heigth'></div>
         <Services />
         <Contact />
         <Footer />

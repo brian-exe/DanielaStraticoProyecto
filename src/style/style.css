@@ -42,6 +42,10 @@ a:hover {
   background-color: white;
 }
 
+.div-heigth {
+  height: 100px;
+}
+
 .navbar-collapse {
   -webkit-box-flex: unset;
       -ms-flex-positive: unset;
@@ -173,7 +177,7 @@ a:hover {
 }
 
 .container-title-exp {
-  border-bottom: 2px solid rgba(0, 0, 0, 0.25);
+  position: relative;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -181,6 +185,28 @@ a:hover {
   margin-right: auto;
   margin-left: auto;
   text-align: center;
+}
+
+.container-title-exp:after {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: 25%;
+  width: 50%;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.25);
+}
+
+.container-title-exp:hover:after {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: 0%;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  width: 100%;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.25);
 }
 
 .text-primary-color {
@@ -292,7 +318,7 @@ a:hover {
 }
 
 .cont-title-services {
-  margin-top: 17rem;
+  margin-top: 11rem;
 }
 
 .service-card {
@@ -306,6 +332,9 @@ a:hover {
 
 .service-card:hover * > .text-primary-color {
   font-weight: bold;
+  font-size: 1.26rem;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
 }
 
 .card-img-top {
@@ -568,6 +597,9 @@ footer {
     font-size: 2rem;
     text-align: center;
     width: 100%;
+  }
+  .div-heigth {
+    height: 10px;
   }
 }
 

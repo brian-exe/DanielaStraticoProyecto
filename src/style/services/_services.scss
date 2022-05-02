@@ -5,7 +5,7 @@
 }
 
 .cont-title-services {
-    margin-top: 17rem;
+    margin-top: 11rem;
 }
 .service-card {
     width: 350px;
@@ -17,6 +17,8 @@
 
 .service-card:hover *> .text-primary-color {
     font-weight: bold;
+    font-size: 1.26rem;
+    transition-duration: .5s;
   }
 
 .card-img-top {

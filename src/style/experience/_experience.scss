@@ -24,7 +24,7 @@
 }
 
 .container-title-exp {
-  border-bottom: 2px solid rgba(0, 0, 0, 0.25);
+  position: relative;
   width: fit-content;
   margin-top: 50px;
   margin-right: auto;
@@ -32,6 +32,27 @@
   text-align: center;
 }
 
+.container-title-exp:after {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: 25%;
+  width: 50%;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.25);
+
+}
+
+.container-title-exp:hover:after {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: 0%;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+  width: 100%;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.25);
+
+}
 .text-primary-color {
   color: #A12568;
 }

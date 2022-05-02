@@ -11,6 +11,7 @@ body {
 
 a {
     text-decoration: none;
+
     &:hover {
         color: white;
     }
@@ -33,7 +34,7 @@ a {
     z-index: 99;
 }
 
-#probando{
+#probando {
     position: initial;
     /* top: 46%; */
     /* left: 49%; */
@@ -42,7 +43,12 @@ a {
     width: 100%;
     border-radius: 0px 0px 150px 150px;
     background-color: white;
-  }
+}
+
+.div-heigth {
+    height: 100px
+}
+
 @import './nav/nav';
 @import './hero/hero';
 @import './experience/experience';
@@ -50,5 +56,3 @@ a {
 @import './contact/contact';
 @import './footer/footer';
 @import './mediaQ/mediasQ';
-
-
