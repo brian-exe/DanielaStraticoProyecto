@@ -6,7 +6,7 @@ import { NavMenu } from './components/navbar/nav';
 import Contact from './components/contact/contact';
 import Footer from './components/footer/footer';
 import React from 'react';
-import fondoRosa from './assets/fondoRosa.svg'
+import fondoRosa from './assets/fondoRosa.png'
 import ScrollButton from './components/scrollToTop/scrollToTop';
 import './style/style.css';
 
@@ -20,10 +20,11 @@ function App() {
       
       <div  style={{
         backgroundImage: `url(${fondoRosa})`,
-        //backgroundColor:'#E3BDD1',
         backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat'
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: '50% 50%'
       }}>
+        <div style={{height:'100px'}}></div>
         <Services />
         <Contact />
         <Footer />

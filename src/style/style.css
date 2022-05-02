@@ -18,10 +18,6 @@ a:hover {
   color: white;
 }
 
-.cont-background-pink {
-  margin-top: -90px;
-}
-
 .scrollImg {
   width: 109px;
   cursor: pointer;
@@ -191,10 +187,6 @@ a:hover {
   color: #A12568;
 }
 
-.text-primary-color:hover {
-  font-weight: bold;
-}
-
 .text-title {
   font-weight: 500;
   font-size: 40px;
@@ -294,9 +286,8 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin-top: 4.075rem;
 }
 
@@ -311,6 +302,10 @@ a:hover {
           box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.64);
   padding: 30px;
   cursor: pointer;
+}
+
+.service-card:hover * > .text-primary-color {
+  font-weight: bold;
 }
 
 .card-img-top {
