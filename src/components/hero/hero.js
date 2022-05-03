@@ -9,7 +9,7 @@ export const Hero = () => {
                 <h2 className='lg-title-hero'>Consultoría Legal y Comunicación</h2>
                 <p className='text-hero'>Facilitar las relaciones y contingencias legales de manera versátil, según las necesidades específicas del contexto.</p>
                 <div className='container-btn'>
-                    <a className='btn-pink' href="#">Informate +</a>
+                    <a className='btn-pink' href="#">Informate <span className='span-plusSign'>+</span></a>
                 </div>
             </div>
             <div className='container-img'>

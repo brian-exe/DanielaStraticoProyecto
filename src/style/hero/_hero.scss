@@ -43,10 +43,11 @@
     background: #BC448C;
     border-color: #BC448C;
     color: white;
+    transition: padding .5s ease-in-out;
 }
 
 .btn-pink:hover {
-    padding: 1rem 1.75rem;
+    padding: 1rem 2.75rem;
     height: 48px;
     border-radius: 100px;
     background: #BC448C;
