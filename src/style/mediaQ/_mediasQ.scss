@@ -1,6 +1,7 @@
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-width : 280px) and (max-width : 759px) {
+    
     .navbar {
         margin: 3rem 1rem;
     }
@@ -76,6 +77,7 @@
 
     .img-exp {
         margin: 0;
+        max-width: 100%;
     }
 
     .container-bt-sm {
@@ -89,12 +91,17 @@
         flex-direction: column-reverse;
     }
 
+    .fondoRosa {
+        background-position: 50% 50%;
+    }
+
     .service-card {
         margin: 1rem 0;
     }
 
     .services-cards-container {
         margin-top: 1rem;
+        justify-content: center;
     }
 
     .content-contact {
@@ -236,6 +243,9 @@
     .lg-title-contact {
         font-size: 2rem;
     }
+    .fondoRosa {
+        background-position: 50% 50%;
+    }
 }
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-width : 781px) and (max-width : 1024px) {
@@ -300,6 +310,9 @@
     .lg-title-contact {
         font-size: 2rem;
     }
+    .fondoRosa {
+        background-position: 50% 50%;
+    }
 }
 
 @media only screen and (min-width : 1025px) and (max-width : 1137px) {
@@ -338,9 +351,12 @@
     .service-card {
         width: 30%;
     }
+    .fondoRosa {
+        background-position: 50% 50%;
+    }
 }
 
-@media only screen and (min-width : 1138px) and (max-width : 1423px) {
+@media only screen and (min-width : 1138px) and (max-width : 1623px) {
     .lg-title-hero {
         font-size: 3rem;
         line-height: unset;
@@ -360,6 +376,9 @@
     }
     .service-card {
         width: 30%;
+    }
+    .fondoRosa {
+        background-position: 50% 50%;
     }
 }
 

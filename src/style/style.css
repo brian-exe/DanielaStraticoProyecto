@@ -312,13 +312,14 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 4.075rem;
 }
 
 .cont-title-services {
-  margin-top: 11rem;
+  margin-top: 14rem;
 }
 
 .service-card {
@@ -525,6 +526,7 @@ footer {
   }
   .img-exp {
     margin: 0;
+    max-width: 100%;
   }
   .container-bt-sm {
     width: -webkit-fit-content;
@@ -542,11 +544,17 @@ footer {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
+  .fondoRosa {
+    background-position: 50% 50%;
+  }
   .service-card {
     margin: 1rem 0;
   }
   .services-cards-container {
     margin-top: 1rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .content-contact {
     -webkit-box-orient: vertical;
@@ -685,6 +693,9 @@ footer {
   .lg-title-contact {
     font-size: 2rem;
   }
+  .fondoRosa {
+    background-position: 50% 50%;
+  }
 }
 
 /* iPads (portrait and landscape) ----------- */
@@ -748,6 +759,9 @@ footer {
   .lg-title-contact {
     font-size: 2rem;
   }
+  .fondoRosa {
+    background-position: 50% 50%;
+  }
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1137px) {
@@ -782,9 +796,12 @@ footer {
   .service-card {
     width: 30%;
   }
+  .fondoRosa {
+    background-position: 50% 50%;
+  }
 }
 
-@media only screen and (min-width: 1138px) and (max-width: 1423px) {
+@media only screen and (min-width: 1138px) and (max-width: 1623px) {
   .lg-title-hero {
     font-size: 3rem;
     line-height: unset;
@@ -803,6 +820,9 @@ footer {
   }
   .service-card {
     width: 30%;
+  }
+  .fondoRosa {
+    background-position: 50% 50%;
   }
 }
 

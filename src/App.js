@@ -16,14 +16,14 @@ function App() {
       <NavMenu id="top" />
       <Hero id="hero" />
       <ScrollButton />
-      <Experience />
+      <Experience id="experience"/>
       
-      <div  style={{
-        marginTop: "-5rem",
+      <div  className='fondoRosa' style={{
+        marginTop: "-8rem",
         backgroundImage: `url(${fondoRosa})`,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
-        backgroundPosition: '50% 50%'
+        // backgroundPosition: '50% 50%'
       }}>
         <div className='div-heigth'></div>
         <Services />
