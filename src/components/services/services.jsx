@@ -18,7 +18,7 @@ function Services() {
         <Container id="services" className="container-services">
             <Row>
                 <div className='container-title-exp cont-title-services'>
-                    <h2 className='title-exp'>Servicios</h2>
+                    <h2 className='title-exp'>SERVICIOS</h2>
                 </div>
             </Row>
             <Row className="services-cards-container" >
@@ -44,7 +44,7 @@ function Services() {
                 <Modal.Header closeButton>
                     <Modal.Title>Comunicación</Modal.Title>
                 </Modal.Header>
-                <Modal.Body>
+                <Modal.Body style={{textAlign:'justify'}}>
                     <p>
                         <b>¿Para qué vas a esperar que el conflicto escale si lo podemos trabajar antes?</b><br></br>
                         Evitemos que tus conflictos se transformen en un problema legal, un conflicto laboral y/o que impacten en tus finanzas.
@@ -56,12 +56,7 @@ function Services() {
                         <br></br>
                         <br></br>
                         <b>¿Cómo te acompaño a incorporar herramientas de estos modelos?</b><br></br>
-                        Entrevistas para obtener información de las áreas o personas afectadas en la empresa.
-                        Diagnóstico de la problemática del negocio.
-                        Diseñaremos las facilitaciones o capacitaciones, individuales o grupales, que se ajusten a tu necesidad:
-                        -Habilidades blandas: escucha, empatía.
-                        -Organización: gestión del tiempo, educación emocional. Desarrollo de pensamiento sistémico.
-
+                        Tendremos entrevistas para obtener información de los desafíos que atraviesa la empresa. Haré un diagnóstico de la problemática del negocio. Diseñaremos las facilitaciones o capacitaciones, individuales o grupales, que se ajusten a la necesidad de tu empresa: habilidades blandas (escucha, empatía), organización (gestión del tiempo, educación emocional), desarrollo de pensamiento sistémico.
                     </p>
                 </Modal.Body>
             </Modal>
@@ -76,7 +71,7 @@ function Services() {
 
                         Representación Prejudicial – Negociaciones. <br></br><br></br>
 
-                        Contratos: Redacción, administración, renegociación y terminación de contratos. (comerciales, civiles, laborales). <br></br><br></br>
+                        Contratos: Redacción, administración, renegociación y terminación de contratos, (comerciales, civiles, laborales). <br></br><br></br>
 
                         Societario: Redacción de actas obligatorias. Inscripción de trámites. <br></br><br></br>
 
@@ -94,7 +89,7 @@ function Services() {
                 </Modal.Header>
                 <Modal.Body>
                     <p>
-                        Análisis integral de las problemáticas de la empresa y abordaje de gestiones humanas y/o técnicas para arrivar a una solución:<br></br><br></br>
+                        Análisis integral de las problemáticas de la empresa y abordaje de gestiones humanas y/o técnicas para arribar a una solución:<br></br><br></br>
 
                         Entrevistas para obtener información de las áreas o personas afectadas en la empresa.<br></br><br></br>
 

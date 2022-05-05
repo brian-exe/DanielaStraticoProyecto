@@ -44,13 +44,13 @@ function Contact() {
         <Container id="contact" className="container-contact" >
             <Row>
                 <div className='container-title-exp'>
-                    <h2 className='title-exp'>Contacto</h2>
+                    <h2 className='title-exp'>CONTACTO</h2>
                 </div>
             </Row>
             <Row className="content-contact">
                 <Col>
                     <Row><h2 className="lg-title-contact">Bienvenida tu consulta.</h2></Row>
-                    <Row><h4 className="text-presentacion">Enviá tu consulta y estaré respondiéndote a la brevedad posible.</h4></Row>
+                    <Row><h4 className="text-presentacion">Enviá tu consulta y estaré respondiéndote a la brevedad.</h4></Row>
                 </Col>
                 <Col>
                     <Row style={{ placeContent: 'center' }}>

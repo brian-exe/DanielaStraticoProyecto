@@ -8,24 +8,23 @@ function Experience() {
         <Container id="experience" className='container-exp'>
             <Row>
                 <div className='container-title-exp'>
-                    <h2 className='title-exp'>Experiencia</h2>
+                    <h2 className='title-exp'>SOBRE MI</h2>
                 </div>
             </Row>
             <div className="container-experiencia-text-img">
                 <Col className="text-exp">
                     <Row>
-                        <h3 className="text-primary-color text-title">¡Hola!</h3>
                         <h3 className="text-nombre">Soy Daniela Stratico</h3>
                     </Row>
                     <Row className="conatiner-text-presentacion">
-                        <p className="text-presentacion">Abogada especializada en empresas con más de 12 años de experiencia.
-                            Facilito servicios con mirada estratégica y liderazgo sistémico, para que las personas y las organizaciones logren que sus asuntos legales avancen y se gestionen según sus necesidades.
-                            Un blend de conocimiento técnico y mirada empática en la gestión legal de lo habitual, de los conflictos y de los cambios.
+                        <p className="text-presentacion">
+                            Abogo con mirada estratégica y estilo empático, para que las personas y las organizaciones logren que sus asuntos legales avancen y se gestionen según sus estilos,  necesidades y preferencias.
+                            <br></br>
+                            Un blend de conocimiento técnico y acompañamiento humano en la gestión legal de lo habitual, de los conflictos y de los cambios.
                         </p>
-                        <p className="text-presentacion">¡Gracias por visitar mi web!</p>
                         <p className="text-presentacion">Un abrazo.</p>
                     </Row>
-                    <Row> <div className="container-bt-sm"><a className="btn-pink" href="https://www.linkedin.com/in/daniela-stratico/">Conoce más</a> </div> </Row>
+                    <Row> <div className="container-bt-sm"><a className="btn-pink" href="https://www.linkedin.com/in/daniela-stratico/">Conoceme +</a> </div> </Row>
                 </Col>
                 <Col className="cont-text-img-exp">
                     <Row className="img-exp"> <img src={expImg} alt="" /></Row>

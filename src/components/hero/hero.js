@@ -6,10 +6,13 @@ export const Hero = () => {
     return (
         <Container id="hero" className='container-hero'>
             <div className='container-text-hero'>
-                <h2 className='lg-title-hero'>Consultoría Legal y Comunicación</h2>
-                <p className='text-hero'>Facilitar las relaciones y contingencias legales de manera versátil, según las necesidades específicas del contexto.</p>
+                <h2 className='lg-title-hero'>Consultoría Legal </h2>
+                <h2 className='lg-title-hero'>& Comunicación</h2>
+                <p className='text-hero'>
+                    Facilito los asuntos y las relaciones legales, de manera versátil y con foco en la gestión tanto de las problemáticas técnicas como de las humanas.
+                </p>
                 <div className='container-btn'>
-                    <a className='btn-pink' href="#experience">Informate <span className='span-plusSign'>+</span></a>
+                    <a className='btn-pink' href="#services">Informate <span className='span-plusSign'>+</span></a>
                 </div>
             </div>
             <div className='container-img'>
