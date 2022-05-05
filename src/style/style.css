@@ -63,7 +63,11 @@ a:hover {
 }
 
 .navbar-light .navbar-brand {
-  color: #737373;
+  color: #BC4475;
+}
+
+.navbar-light .navbar-brand:hover {
+  color: #BC4475;
 }
 
 .nav-link {
