@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import imgScroll from '../../assets/scrolltotop.png';
+import imgWhatsapp from '../../assets/whatsappBtn.png';
 
 const ScrollButton = () => {
 
     const [visible, setVisible] = useState(false)
+    const nroTelefono = "541168090888";
 
     useEffect(() => {
         window.addEventListener('scroll', (e) => {
@@ -29,10 +31,26 @@ const ScrollButton = () => {
     };
 
 
+    const goToWhatsapp = (e) => {
+        e.preventDefault()
+        const whatsappUrl = "https://wa.me/" + nroTelefono;
+        openInNewTab(whatsappUrl);
+    };
+
+    const openInNewTab = (url) => {
+        const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
+        if (newWindow) newWindow.opener = null
+    }
+
     return (
         <>
-            <div onClick={scrollToTop} className="stickyCont">
-                <img className="scrollImg" src={imgScroll} alt="scroll to top icon" style={{ display: visible ? 'inline' : 'none' }} />
+            <div  className="stickyCont">
+                <div onClick={scrollToTop}>
+                    <img className="scrollImg" src={imgScroll} alt="ir arriba" style={{ display: visible ? 'inline' : 'none' }} />
+                </div>
+                <div onClick={goToWhatsapp}>
+                    <img className="scrollImg" src={imgWhatsapp} alt="Whatsapp" />
+                </div>
             </div>
         </>
     );

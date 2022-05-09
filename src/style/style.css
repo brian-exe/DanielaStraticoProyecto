@@ -29,6 +29,13 @@ a:hover {
   right: 0;
   bottom: 0;
   z-index: 99;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #probando {
@@ -58,7 +65,7 @@ a:hover {
 }
 
 .navbar-brand {
-  font-weight: 900;
+  font-weight: 350;
   font-size: 2.15rem;
 }
 
@@ -299,7 +306,7 @@ a:hover {
 }
 
 .container-bt-sm {
-  margin-top: 25px;
+  margin-top: 70px;
 }
 
 .container-experience-years {

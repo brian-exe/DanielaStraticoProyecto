@@ -50,7 +50,7 @@ function Contact() {
             <Row className="content-contact">
                 <Col>
                     <Row><h2 className="lg-title-contact">Bienvenida tu consulta.</h2></Row>
-                    <Row><h4 className="text-presentacion">Enviá tu consulta y estaré respondiéndote a la brevedad.</h4></Row>
+                    <Row><h4 className="text-presentacion">Estaré respondiendo tu mensaje a la brevedad.</h4></Row>
                 </Col>
                 <Col>
                     <Row style={{ placeContent: 'center' }}>
