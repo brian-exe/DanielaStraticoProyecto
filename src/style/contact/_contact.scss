@@ -1,12 +1,12 @@
 .container-contact {
-    margin-top: 30px;
-    margin-bottom: 3.75rem;
+    margin-top: 6.875rem;
+    margin-bottom: 6.75rem;
     align-items: center;
     text-align: center;
 }
 
 .content-contact {
-    margin-top: 30px;
+    margin-top: 4.875rem;
     display: flex;
     justify-content: space-around;
 }
@@ -28,4 +28,13 @@
     position: fixed;
     bottom: 20px;
     right: 20px;
+}
+
+.md-title-contact {
+    margin-top: 5rem;
+    color: rgba(80, 80, 80, 1);
+    font-size: 1.8rem;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 0em;
 }

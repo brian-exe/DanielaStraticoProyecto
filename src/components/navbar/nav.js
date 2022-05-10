@@ -1,12 +1,13 @@
+
 import React from 'react';
 import { Nav, Container, Navbar} from 'react-bootstrap';
-import imgLogo from '../../assets/logo1.png'
+
 
 export const NavMenu = () => {
     return (
         <Navbar expand="md">
             <Container>
-                <Navbar.Brand href="#home"><img className='imgLogo' src={imgLogo} alt="" /></Navbar.Brand>
+                <Navbar.Brand href="#home">Daniela Stratico</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">

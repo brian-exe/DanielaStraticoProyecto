@@ -10,39 +10,41 @@ function Services() {
     const [showComunicacionModal, setShowComunicacionModal] = useState(false);
     const [showLegalesModal, setShowLegalesModal] = useState(false);
     const [showConsultoriaModal, setShowConsultoriaModal] = useState(false);
-    
+
     const handleClose = (setFunction) => setFunction(false);
     const handleShow = (setFunction) => setFunction(true);
 
     return (
         <Container id="services" className="container-services">
             <Row>
-                <div className='container-title-exp'>
-                    <h2 className='title-exp'>Servicios</h2>
+                <div className='container-title-exp cont-title-services'>
+                    <h2 className='title-exp'>SERVICIOS</h2>
                 </div>
             </Row>
             <Row className="services-cards-container" >
                 <ServiceCard
-                    onClick = {()=> {handleShow(setShowComunicacionModal)}}
-                    title="Comunicacion"
-                    imgSrc={legalesImg} />
-                <ServiceCard
-                    onClick = {()=> {handleShow(setShowLegalesModal)}}
-                    title="Legales"
-                    imgSrc={comunicacionImg} />
-                <ServiceCard
-                    onClick = {()=> {handleShow(setShowConsultoriaModal)}}
+                    onClick={() => { handleShow(setShowConsultoriaModal) }}
                     title="Consultoría"
                     imgSrc={coachingImg} />
+                <ServiceCard
+                    onClick={() => { handleShow(setShowLegalesModal) }}
+                    title="Legales"
+                    imgSrc={legalesImg} />
+                <ServiceCard
+                    onClick={() => { handleShow(setShowComunicacionModal) }}
+                    title="Comunicacion"
+                    imgSrc={comunicacionImg} />
+
+
             </Row>
 
             {/*  DEJO ABAJO LOS TRES MODALES PARA ASOCIAR AL SERVICE CARD */}
-            
-            <Modal show={showComunicacionModal} onHide={()=> {handleClose(setShowComunicacionModal)}} centered>
+
+            <Modal show={showComunicacionModal} onHide={() => { handleClose(setShowComunicacionModal) }} centered>
                 <Modal.Header closeButton>
                     <Modal.Title>Comunicación</Modal.Title>
                 </Modal.Header>
-                <Modal.Body>
+                <Modal.Body style={{textAlign:'justify'}}>
                     <p>
                         <b>¿Para qué vas a esperar que el conflicto escale si lo podemos trabajar antes?</b><br></br>
                         Evitemos que tus conflictos se transformen en un problema legal, un conflicto laboral y/o que impacten en tus finanzas.
@@ -54,17 +56,12 @@ function Services() {
                         <br></br>
                         <br></br>
                         <b>¿Cómo te acompaño a incorporar herramientas de estos modelos?</b><br></br>
-                        Entrevistas para obtener información de las áreas o personas afectadas en la empresa.
-                        Diagnóstico de la problemática del negocio.
-                        Diseñaremos las facilitaciones o capacitaciones, individuales o grupales, que se ajusten a tu necesidad:
-                        -Habilidades blandas: escucha, empatía.
-                        -Organización: gestión del tiempo, educación emocional. Desarrollo de pensamiento sistémico.
-
+                        Tendremos entrevistas para obtener información de los desafíos que atraviesa la empresa. Haré un diagnóstico de la problemática del negocio. Diseñaremos las facilitaciones o capacitaciones, individuales o grupales, que se ajusten a la necesidad de tu empresa: habilidades blandas (escucha, empatía), organización (gestión del tiempo, educación emocional), desarrollo de pensamiento sistémico.
                     </p>
                 </Modal.Body>
             </Modal>
 
-            <Modal show={showLegalesModal} onHide={()=> {handleClose(setShowLegalesModal)}} centered>
+            <Modal show={showLegalesModal} onHide={() => { handleClose(setShowLegalesModal) }} centered>
                 <Modal.Header closeButton>
                     <Modal.Title>Legales</Modal.Title>
                 </Modal.Header>
@@ -74,7 +71,7 @@ function Services() {
 
                         Representación Prejudicial – Negociaciones. <br></br><br></br>
 
-                        Contratos: Redacción, administración, renegociación y terminación de contratos. (comerciales, civiles, laborales). <br></br><br></br>
+                        Contratos: Redacción, administración, renegociación y terminación de contratos, (comerciales, civiles, laborales). <br></br><br></br>
 
                         Societario: Redacción de actas obligatorias. Inscripción de trámites. <br></br><br></br>
 
@@ -86,13 +83,13 @@ function Services() {
                 </Modal.Body>
             </Modal>
 
-            <Modal show={showConsultoriaModal} onHide={()=> {handleClose(setShowConsultoriaModal)}} centered>
+            <Modal show={showConsultoriaModal} onHide={() => { handleClose(setShowConsultoriaModal) }} centered>
                 <Modal.Header closeButton>
                     <Modal.Title>Consultoría</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
                     <p>
-                        Análisis integral de las problemáticas de la empresa y abordaje de gestiones humanas y/o técnicas para arrivar a una solución:<br></br><br></br>
+                        Análisis integral de las problemáticas de la empresa y abordaje de gestiones humanas y/o técnicas para arribar a una solución:<br></br><br></br>
 
                         Entrevistas para obtener información de las áreas o personas afectadas en la empresa.<br></br><br></br>
 

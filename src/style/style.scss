@@ -11,10 +11,17 @@ body {
 
 a {
     text-decoration: none;
+    color: rgba(80, 80, 80, 1);
+
+
     &:hover {
         color: white;
     }
 }
+
+// .cont-background-pink {
+//     //margin-top: -90px;
+// }
 
 .scrollImg {
     width: 109px;
@@ -22,12 +29,31 @@ a {
 }
 
 .stickyCont {
-    position: sticky;
+    position: fixed;
     float: right;
-    top: 0;
+    right: 0;
     bottom: 0;
     z-index: 99;
+    display: flex;
+    flex-direction: column;
 }
+
+#probando {
+    position: initial;
+    /* top: 46%; */
+    /* left: 49%; */
+    /* transform: translate(37%, 40%); */
+    height: 100px;
+    width: 100%;
+    border-radius: 0px 0px 150px 150px;
+    background-color: white;
+}
+
+.div-heigth {
+    height: 100px
+}
+
+
 @import './nav/nav';
 @import './hero/hero';
 @import './experience/experience';
@@ -35,5 +61,3 @@ a {
 @import './contact/contact';
 @import './footer/footer';
 @import './mediaQ/mediasQ';
-
-

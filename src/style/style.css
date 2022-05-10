@@ -12,6 +12,7 @@ body {
 
 a {
   text-decoration: none;
+  color: #505050;
 }
 
 a:hover {
@@ -24,12 +25,33 @@ a:hover {
 }
 
 .stickyCont {
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   float: right;
-  top: 0;
+  right: 0;
   bottom: 0;
   z-index: 99;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#probando {
+  position: initial;
+  /* top: 46%; */
+  /* left: 49%; */
+  /* transform: translate(37%, 40%); */
+  height: 100px;
+  width: 100%;
+  border-radius: 0px 0px 150px 150px;
+  background-color: white;
+}
+
+.div-heigth {
+  height: 100px;
 }
 
 .navbar-collapse {
@@ -40,20 +62,24 @@ a:hover {
 
 .navbar {
   padding: 0;
-  margin: 40px 100px;
+  margin: 60px 45px;
 }
 
 .navbar-brand {
-  font-weight: 900;
-  font-size: 2.25rem;
+  font-weight: 350;
+  font-size: 2.15rem;
 }
 
 .navbar-light .navbar-brand {
-  color: #737373;
+  color: #BC4475;
+}
+
+.navbar-light .navbar-brand:hover {
+  color: #BC4475;
 }
 
 .nav-link {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   padding-left: 25px !important;
 }
 
@@ -115,10 +141,12 @@ a:hover {
   background: #BC448C;
   border-color: #BC448C;
   color: white;
+  -webkit-transition: padding .5s ease-in-out;
+  transition: padding .5s ease-in-out;
 }
 
 .btn-pink:hover {
-  padding: 1rem 1.75rem;
+  padding: 1rem 2.75rem;
   height: 48px;
   border-radius: 100px;
   background: #BC448C;
@@ -139,6 +167,7 @@ a:hover {
 }
 
 .container-exp img {
+  margin-top: 4rem;
   max-height: 80%;
   max-width: 100%;
 }
@@ -147,6 +176,9 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -157,13 +189,13 @@ a:hover {
   color: #565454;
   font-weight: 700;
   line-height: 78px;
-  font-size: 50px;
+  font-size: 30px;
   letter-spacing: 0em;
   text-align: center;
 }
 
 .container-title-exp {
-  border-bottom: 2px solid rgba(0, 0, 0, 0.25);
+  position: relative;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -171,6 +203,26 @@ a:hover {
   margin-right: auto;
   margin-left: auto;
   text-align: center;
+}
+
+.container-title-exp:after {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: 25%;
+  width: 50%;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.25);
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+.container-title-exp:hover:after {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: 0%;
+  width: 100%;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.25);
 }
 
 .text-primary-color {
@@ -186,7 +238,7 @@ a:hover {
 
 .text-nombre {
   font-weight: 500;
-  font-size: 40px;
+  font-size: 38px;
   line-height: 60px;
   color: #707070;
 }
@@ -216,8 +268,8 @@ a:hover {
 }
 
 .text-presentacion {
-  text-align: left;
-  font-size: 25px;
+  text-align: justify;
+  font-size: 23px;
   font-weight: 300;
   line-height: 32px;
   letter-spacing: 0em;
@@ -259,7 +311,7 @@ a:hover {
 }
 
 .container-bt-sm {
-  margin-top: 25px;
+  margin-top: 70px;
 }
 
 .container-experience-years {
@@ -276,9 +328,14 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin-top: 5.375rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 4.075rem;
+}
+
+.cont-title-services {
+  margin-top: 14rem;
 }
 
 .service-card {
@@ -288,6 +345,13 @@ a:hover {
           box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.64);
   padding: 30px;
   cursor: pointer;
+}
+
+.service-card:hover * > .text-primary-color {
+  font-weight: bold;
+  font-size: 1.26rem;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
 }
 
 .card-img-top {
@@ -329,8 +393,8 @@ a:hover {
 }
 
 .container-contact {
-  margin-top: 30px;
-  margin-bottom: 3.75rem;
+  margin-top: 6.875rem;
+  margin-bottom: 6.75rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -338,7 +402,7 @@ a:hover {
 }
 
 .content-contact {
-  margin-top: 30px;
+  margin-top: 4.875rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -363,6 +427,15 @@ a:hover {
   position: fixed;
   bottom: 20px;
   right: 20px;
+}
+
+.md-title-contact {
+  margin-top: 5rem;
+  color: #505050;
+  font-size: 1.8rem;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 0em;
 }
 
 footer {
@@ -403,7 +476,6 @@ footer {
   text-align: right;
 }
 
-/* iPhone 4 ----------- */
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-width: 280px) and (max-width: 759px) {
   .navbar {
@@ -479,6 +551,7 @@ footer {
   }
   .img-exp {
     margin: 0;
+    max-width: 100%;
   }
   .container-bt-sm {
     width: -webkit-fit-content;
@@ -496,11 +569,17 @@ footer {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
+  .fondoRosa {
+    background-position: 50% 50%;
+  }
   .service-card {
     margin: 1rem 0;
   }
   .services-cards-container {
     margin-top: 1rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .content-contact {
     -webkit-box-orient: vertical;
@@ -551,6 +630,9 @@ footer {
     font-size: 2rem;
     text-align: center;
     width: 100%;
+  }
+  .div-heigth {
+    height: 10px;
   }
 }
 
@@ -636,6 +718,9 @@ footer {
   .lg-title-contact {
     font-size: 2rem;
   }
+  .fondoRosa {
+    background-position: 50% 50%;
+  }
 }
 
 /* iPads (portrait and landscape) ----------- */
@@ -699,6 +784,9 @@ footer {
   .lg-title-contact {
     font-size: 2rem;
   }
+  .fondoRosa {
+    background-position: 50% 50%;
+  }
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1137px) {
@@ -733,9 +821,12 @@ footer {
   .service-card {
     width: 30%;
   }
+  .fondoRosa {
+    background-position: 50% 50%;
+  }
 }
 
-@media only screen and (min-width: 1138px) and (max-width: 1423px) {
+@media only screen and (min-width: 1138px) and (max-width: 1623px) {
   .lg-title-hero {
     font-size: 3rem;
     line-height: unset;
@@ -754,6 +845,9 @@ footer {
   }
   .service-card {
     width: 30%;
+  }
+  .fondoRosa {
+    background-position: 50% 50%;
   }
 }
 

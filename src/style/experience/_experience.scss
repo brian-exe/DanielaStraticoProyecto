@@ -5,24 +5,26 @@
 }
 
 .container-exp img {
+  margin-top: 4rem;
   max-height: 80%;
   max-width: 100%;
 }
 .container-experiencia-text-img {
   display: flex;
+  align-items: center;
   flex-direction: row;
 }
 .title-exp {
   color: rgba(86, 84, 84, 1);
   font-weight: 700;
   line-height: 78px;
-  font-size: 50px;
+  font-size: 30px;
   letter-spacing: 0em;
   text-align: center;
 }
 
 .container-title-exp {
-  border-bottom: 2px solid rgba(0, 0, 0, 0.25);
+  position: relative;
   width: fit-content;
   margin-top: 50px;
   margin-right: auto;
@@ -30,10 +32,28 @@
   text-align: center;
 }
 
+.container-title-exp:after {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: 25%;
+  width: 50%;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.25);
+  transition: 1s ease-in-out;
+}
+
+.container-title-exp:hover:after {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: 0%;
+  width: 100%;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.25);
+}
 .text-primary-color {
   color: #A12568;
-
 }
+
 .text-title {
   font-weight: 500;
   font-size: 40px;
@@ -43,7 +63,7 @@
 
 .text-nombre {
   font-weight: 500;
-  font-size: 40px;
+  font-size: 38px;
   line-height: 60px;
   color: #707070;
 }
@@ -73,8 +93,8 @@
 }
 
 .text-presentacion {
-  text-align: left;
-  font-size: 25px;
+  text-align: justify;
+  font-size: 23px;
   font-weight: 300;
   line-height: 32px;
   letter-spacing: 0em;
@@ -106,7 +126,7 @@
 }
 
 .container-bt-sm {
-  margin-top: 25px;
+  margin-top: 70px;
 }
 
 .container-experience-years {

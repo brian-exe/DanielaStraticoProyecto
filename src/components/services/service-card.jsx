@@ -6,7 +6,7 @@ function ServiceCard({title, text, imgSrc, onClick}) {
         <Card className="service-card" onClick={onClick}>
             <Card.Img variant="top" src={imgSrc}/>
             <div style={{textAlign:'center'}}>
-                <Card.Title className="text-primary-color" style={{ color: '#A12568'}} >{title}</Card.Title>
+                <Card.Title className="text-primary-color">{title}</Card.Title>
             </div>
         </Card>
     );
