@@ -1,7 +1,6 @@
-import { Container, Row, Col, Form, Button, Dropdown, } from "react-bootstrap";
+import { Container, Row, Col, Form, Dropdown, } from "react-bootstrap";
 import React from 'react';
-import { IoLogoWhatsapp, IoMail } from 'react-icons/io5'
-import logoLinkedIn from '../../assets/logoLinkedin.png'
+import { IoLogoWhatsapp, IoMail} from 'react-icons/io5'
 
 const { useState } = React;
 
@@ -82,7 +81,7 @@ function Contact() {
                     </Row>
                 </Col>
             </Row>
-            <p className="md-title-contact">¿Te interesa saber mas sobre mi? <br /> Encontrame en <a href="https://www.linkedin.com/in/daniela-stratico/" >LinkedIn <i class="fab fa-linkedin"></i> </a>  </p>
+            <p className="md-title-contact">¿Te interesa saber más sobre mi? <br /> Encontrame en <a href="https://www.linkedin.com/in/daniela-stratico/" >LinkedIn <i class="fab fa-linkedin"></i> </a>  </p>
         </Container>
     );
 }
