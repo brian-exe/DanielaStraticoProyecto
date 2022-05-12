@@ -1,7 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
 import React from 'react';
 import expImg from '../../assets/experienceImg.png';
-import ScrollButton from "../scrollToTop/scrollToTop";
 
 function Experience() {
     return (
@@ -24,7 +23,6 @@ function Experience() {
                         </p>
                         {/* <p className="text-presentacion">Un abrazo.</p> */}
                     </Row>
-                    <Row> <div className="container-bt-sm"><a className="btn-pink" href="https://www.linkedin.com/in/daniela-stratico/">Conoceme +</a> </div> </Row>
                 </Col>
                 <Col className="cont-text-img-exp">
                     <Row className="img-exp"> <img src={expImg} alt="" /></Row>
